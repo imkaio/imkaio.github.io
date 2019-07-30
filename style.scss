@@ -1,0 +1,469 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,600,700&display=swap');
+
+/* GERAL */
+body {
+  font-family: 'Oswald', sans-serif;
+  overflow-x: hidden;
+}
+
+/* TITULOS */
+.header__section {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  span {
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  h1 {
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 59px;
+    font-weight: 700;
+  }
+}
+
+/* SEÇÕES */
+#main__screen {
+  width: 100%;
+  nav.nav {
+    width: 100%;
+    height: 115px;
+    position: fixed;
+    background: linear-gradient(#000 0%, rgba(0, 0, 0, 0) 100%);
+    -webkit-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+    -moz-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+    -ms-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+    -o-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+    transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+    z-index: 10;
+
+    .container-fluid {
+      .menu {
+        width: 100%;
+        height: 115px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        -webkit-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+        -moz-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+        -ms-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+        -o-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+        transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+        ul {
+          display: flex;
+          margin: 0;
+
+          li {
+            list-style: none;
+            margin-left: 20px;
+            color: #FFF;
+            font-size: 18px;
+
+            &:first-child {
+              margin-left: 0px;
+            }
+          }
+
+          .home__search {
+            border: none;
+            border-bottom: 2px solid #fff;
+            color: #FFF;
+            font-family: 'Oswald';
+            text-transform: uppercase;
+            font-size: 14px;
+            background: transparent;
+            width: 225px;
+          }
+        }
+      }
+    }
+  }
+
+
+  .home__banner--principal {
+    width: 100%;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+
+.faixa__frete--gratis {
+  width: 100%;
+  position: fixed;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: faixaFrete 1s cubic-bezier(.74, .06, .4, .92) forwards;
+  -o-animation: faixaFrete 1s cubic-bezier(.74, .06, .4, .92) forwards;
+  animation: faixaFrete 1s cubic-bezier(.74, .06, .4, .92) forwards;
+
+  .frete-gratis {
+    background: #FFC100;
+    width: 99%;
+    padding: 15px 0px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    p {
+      letter-spacing: 3px;
+      font-weight: 600;
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+    }
+    i {
+      background: #000;
+      color: #FFC100;
+      width: 35px;
+      height: 35px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+#lancamento {
+  width: 100%;
+  margin-top: 50px;
+
+  .lancamentos__vitrine {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    .lancamento__produto {
+      width: 100%;
+      .produto__foto {
+        width: 398px;
+        height: 566px;
+        background: #DDD;
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+      .produto__informacoes {
+        margin-top: 25px;
+        .produto__nome {
+          display: flex;
+          flex-direction: column;
+          p{
+          font-weight: 400;
+          letter-spacing: 2px;
+          font-size: 20px;
+          margin: 0;
+          padding: 0;
+          }
+          span {
+            font-size: 14px;
+          }
+        }
+
+        .produto__preco {
+          margin: 15px 0px 0px 0px;
+          .preço__avista, .preço__parcelado {
+            display: flex;
+            align-items: baseline;
+            p {
+              font-size: 20px;
+              font-weight: 400;
+              margin: 0;
+              padding: 0;
+              letter-spacing: 1px;
+              &:first-child {
+                font-weight: 600;
+              }
+            }
+            span {
+              text-transform: uppercase;
+              font-size: 12px;
+              margin-left: 5px;
+              letter-spacing: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#custom__grid {
+  width: 100%;
+  margin: 50px 0px;
+  height: 100px;
+  background: #FFC100;
+  display: flex;
+  position: relative;
+}
+
+
+#colecoes {
+  .colecoes__vitrine {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+
+    .colecao__spot {
+      width: 100%;
+      position: relative;
+      transition: cubic-bezier(0.68, -0.55, .27, 01.55) 320ms;
+
+      &:hover {
+        .descricao_colecao {
+          height: 150px;
+        }
+      }
+      .imagem_colecao {
+        width: 100%;
+        height: auto;
+        img {
+          max-width: 100%;
+          height: auto;
+          transition: cubic-bezier(0.68, -0.55, .27, 01.55) 320ms;
+
+        }
+      }
+      .descricao_colecao {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
+        width: 100%;
+        padding: 25px;
+        height: 100px;
+        transition: height cubic-bezier(0.68, -0.55, .27, 01.55) 350ms;
+
+        .nome_colecao {
+          p {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+            letter-spacing: 4px;
+          }
+          span {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: 4px;
+          }
+        }
+        i {
+          color: #fff;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+.categoria__bg {
+  background: #EEEEEE;
+}
+
+#mais__categoria {
+  padding: 75px 0px;
+  margin-top: 80px;
+
+  .categoria__vitrine {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+
+    .categoria__spot {
+      width: 100%;
+      position: relative;
+      transition: cubic-bezier(0.68, -0.55, .27, 01.55) 320ms;
+      margin-bottom: 25px;
+
+      &:hover {
+        .categoria__descricao {
+          height: 150px;
+        }
+      }
+
+      .categoria__imagem {
+        width: 100%;
+        height: auto;
+        img {
+          max-width: 100%;
+          height: auto;
+          transition: cubic-bezier(0.68, -0.55, .27, 01.55) 320ms;
+        }
+      }
+
+      .categoria__descricao {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
+        width: 100%;
+        padding: 25px;
+        height: 100px;
+        transition: height cubic-bezier(0.68, -0.55, .27, 01.55) 350ms;
+
+        .nome_categoria {
+          p {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+            letter-spacing: 4px;
+          }
+          span {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: 4px;
+          }
+        }
+        i {
+          color: #fff;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+#sobreDLK {
+  width: 100%;
+  background: #000;
+  display: flex;
+  height: 550px;
+
+  .sobre__dlk {
+    width: 90%;
+    margin: 0 auto;
+    height: 550px;
+    background: #000;
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+    flex-direction: column;
+
+    span {
+      font-size: 22px;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 12px;
+      color: #FFFFFF;
+    }
+    h1 {
+      font-size: 60px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 6px;
+      color: #FFFFFF;
+    }
+    p {
+      font-size: 16px;
+      color: #FFFFFF;
+    }
+  }
+
+  .instagram__dlk {
+    width: 100%;
+    height: 550px;
+    background: #FFF;
+    position: relative;
+  }
+  .seguir__dlk {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
+    height: 260px;
+
+    .social {
+      position: absolute;
+      bottom: 50px;
+      right: 50px;
+      display: flex;
+      align-items: center;
+
+      .icons {
+        display: flex;
+
+        i {
+          width: 60px;
+          height: 60px;
+          border: 2px solid #FFF;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          font-size: 18px;
+          margin-left: 15px;
+          color: #FFF;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+      p {
+        font-size: 24px;
+        color: #FFF;
+        margin: 0px 0px 0px 25px;
+        padding: 0;
+      }
+    }
+  }
+}
+
+
+.fecharFaixa {
+  -webkit-animation: fecharFaixaA 1s cubic-bezier(.74, .06, .4, .92) forwards;
+  -o-animation: fecharFaixaA 1s cubic-bezier(.74, .06, .4, .92) forwards;
+  animation: fecharFaixaA 1s cubic-bezier(.74, .06, .4, .92) forwards;
+}
+
+
+.tes {
+  -webkit-animation: vamo 2s cubic-bezier(.74, .06, .4, .92) forwards;
+  -o-animation: vamo 2s cubic-bezier(.74, .06, .4, .92) forwards;
+  animation: vamo 2s cubic-bezier(.74, .06, .4, .92) forwards;
+}
