@@ -458,6 +458,7 @@ nav.menu .burguer div:nth-child(2) {
   margin: 0;
   padding: 0;
   letter-spacing: 4px;
+  font-family: "Oswald";
 }
 #colecoes .colecao__vitrine .colecao__spot .descricao_colecao .nome_colecao span {
   color: #fff;
@@ -465,6 +466,7 @@ nav.menu .burguer div:nth-child(2) {
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 4px;
+  font-family: "Oswald";
 }
 #colecoes .colecao__vitrine .colecao__spot .descricao_colecao i {
   color: #fff;
