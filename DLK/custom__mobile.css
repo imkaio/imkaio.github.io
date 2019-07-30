@@ -1,0 +1,39 @@
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  ul.mobile {
+    flex-direction: column;
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    height: 92vh;
+    background: #232323;
+    width: 80%;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+    transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 820ms;
+    padding-top: 25px;
+    padding-left: 10px;
+  }
+  ul.mobile li {
+    margin-left: 50px !important;
+  }
+  ul.mobile li a {
+    color: #fff;
+  }
+
+  ul li .home__search {
+    display: none;
+  }
+
+  .burguer {
+    display: flex !important;
+  }
+}
+
+/*# sourceMappingURL=custom__mobile.css.map */
