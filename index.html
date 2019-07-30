@@ -14,21 +14,31 @@
 
 <div class="container-fluid p-0">
     <nav class="menu">
+        <ul class="mobile">
+            <li><a href="#">shop</a></li>
+            <li><a href="#">novidades</a></li>
+            <li><a href="#">sale</a></li>
+        </ul>
+
         <div class="logo">
             <img src="logo.png" alt="">
         </div>
 
         <ul>
             <li>
-                <i class="far fa-heart"></i>
+                <img src="icone__fav.png" alt="">
             </li>
 
             <li>
-                <i class="fas fa-user"></i>
+                <img src="icone__conta.png" alt="">
             </li>
 
             <li>
-                <i class="fas fa-shopping-cart"></i>
+                <img src="icone__cart.png" alt="">
+            </li>
+
+            <li class="onMobile">
+                <i class="fas fa-bars"></i>
             </li>
         </ul>
     </nav>
@@ -365,11 +375,15 @@
 
     function scrollFunction() {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 0) {
-            document.querySelector("nav.menu").style.height = "60px";
+            document.querySelector("nav.menu").style.height = "50px";
             document.querySelector("nav.menu").style.background = "#000";
+            document.querySelector("nav.menu .logo").style.width = "80px";
+
         } else {
             document.querySelector("nav.menu").style.height = "115px";
             document.querySelector("nav.menu").style.background = "linear-gradient(#000 0%, rgba(0, 0, 0, 0) 100%)";
+
+            document.querySelector("nav.menu .logo").style.width = "120px";
         }
     }
 
