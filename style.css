@@ -11,6 +11,7 @@
 body {
   font-family: "Oswald";
   width: 100%;
+  overflow-x: hidden;
 }
 
 /*** Loops ***/
@@ -28,7 +29,7 @@ body {
   font-weight: 400;
   font-family: "Oswald", sans-serif;
 }
-.header__section--fluid h1 {
+.header__section--fluid h1, .header__section--fluid h2, .header__section--fluid h3, .header__section--fluid h4 {
   letter-spacing: 10px;
   text-transform: uppercase;
   font-size: 59px;
@@ -49,7 +50,7 @@ body {
   font-weight: 400;
   font-family: "Oswald", sans-serif;
 }
-.header__section h1 {
+.header__section h1, .header__section h2, .header__section h3, .header__section h4 {
   letter-spacing: 10px;
   text-transform: uppercase;
   font-size: 59px;
@@ -319,17 +320,20 @@ nav.menu .burguer div:nth-child(2) {
   font-weight: 400;
   letter-spacing: 12px;
   color: #FFFFFF;
+  font-family: "Oswald";
 }
-#sobreDLK .sobre__dlk h1 {
+#sobreDLK .sobre__dlk h4 {
   font-size: 60px;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 6px;
   color: #FFFFFF;
+  font-family: "Oswald";
 }
 #sobreDLK .sobre__dlk p {
   font-size: 16px;
   color: #FFFFFF;
+  font-family: "Roboto Condensed";
 }
 #sobreDLK .instagram__dlk {
   width: 100%;
@@ -386,6 +390,7 @@ nav.menu .burguer div:nth-child(2) {
   color: #FFF;
   margin: 0px 0px 0px 25px;
   padding: 0;
+  font-family: "Oswald";
 }
 
 /*** Outro ***/
@@ -543,7 +548,7 @@ nav.menu .burguer div:nth-child(2) {
   .header__section span {
     letter-spacing: 12px;
   }
-  .header__section h1 {
+  .header__section h1, .header__section h2, .header__section h3, .header__section h4 {
     font-size: 36px;
   }
 
@@ -553,7 +558,7 @@ nav.menu .burguer div:nth-child(2) {
   .header__section--fluid span {
     letter-spacing: 12px;
   }
-  .header__section--fluid h1 {
+  .header__section--fluid h1, .header__section--fluid h2, .header__section--fluid h3, .header__section--fluid h4 {
     font-size: 36px;
   }
 
@@ -582,6 +587,75 @@ nav.menu .burguer div:nth-child(2) {
     justify-content: center;
     align-items: center;
     position: relative;
+  }
+
+  .instagram__dlk {
+    width: 100%;
+    height: 450px;
+    background: #FFF;
+    position: relative;
+  }
+
+  .sobre__dlk span {
+    margin: 0;
+    font-size: 16px !important;
+  }
+  .sobre__dlk h4 {
+    font-size: 32px !important;
+    margin-bottom: 15px;
+  }
+
+  .seguir__dlk {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .seguir__dlk .social {
+    flex-direction: column;
+    position: relative !important;
+    bottom: 0px !important;
+    right: 0px !important;
+  }
+  .seguir__dlk p {
+    font-size: 18px;
+    color: #FFF;
+    margin: 10px 0px 0px 25px;
+    padding: 0;
+    font-family: "Oswald";
+    text-align: center;
+  }
+}
+/*** animations ***/
+.fecharFaixa {
+  -webkit-animation: fecharFaixaA 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  -o-animation: fecharFaixaA 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation: fecharFaixaA 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+}
+@keyframes faixaFrete {
+  0% {
+    opacity: 0;
+    bottom: -25px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 10px;
+  }
+}
+@keyframes fecharFaixaA {
+  0% {
+    opacity: 1;
+    bottom: 10px;
+  }
+  100% {
+    opacity: 0;
+    bottom: -20px;
+    display: none;
   }
 }
 

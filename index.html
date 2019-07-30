@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Title</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="custom__mobile.css">
-    <link rel="stylesheet" href="animation.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Font Awesome -->
@@ -43,7 +41,7 @@
 <div class="faixa__frete--gratis">
     <div class="frete-gratis">
         <p>FRETE GRÁTIS NAS COMPRAS ACIMA DE R$300,00</p>
-        <i class="fas fa-times"  onclick="fecharFaixaFrete()"></i>
+        <i class="fas fa-times" onclick="fecharFaixaFrete()"></i>
     </div>
 </div>
 
@@ -158,7 +156,7 @@
     <div id="colecoes">
         <div class="header__section">
             <span class="tes">veja mais</span>
-            <h1>+ coleções</h1>
+            <h2>+ coleções</h2>
         </div>
 
         <div class="colecao__vitrine">
@@ -215,7 +213,7 @@
         <div id="categorias">
             <div class="header__section">
                 <span class="tes">veja mais</span>
-                <h1>+ categorias</h1>
+                <h3>+ categorias</h3>
             </div>
 
             <div class="categorias__vitrine">
@@ -320,11 +318,15 @@
             <div class="col-12 col-sm-12 col-md-6">
                 <div class="sobre__dlk">
                     <span>Sobre a </span>
-                    <h1>DLK FITNESS</h1>
+                    <h4>DLK FITNESS</h4>
                     <p>Somos um e-commerce com o foco em Moda Fitness Premium.
-                        Nossos produtos são confeccionados com tecidos tecnológicos e preços muito acessíveis. Nosso portfólio conta com mais de 1000 produtos produzidos através das últimas tendências da moda.
-                        Oferecemos uma experiência de compra única do começo ao fim: nosso site é fácil de ser navegado, checkout rápido com o melhor serviço de atendimento ao consumidor.
-                        A troca é super fácil. Enviamos para todo Brasil e para facilitar ainda mais, oferecemos frete grátis nas compras acima de R$199,00 para a região sudeste e para as demais regiões acima de R$299,00.
+                        Nossos produtos são confeccionados com tecidos tecnológicos e preços muito acessíveis. Nosso
+                        portfólio conta com mais de 1000 produtos produzidos através das últimas tendências da moda.
+                        Oferecemos uma experiência de compra única do começo ao fim: nosso site é fácil de ser navegado,
+                        checkout rápido com o melhor serviço de atendimento ao consumidor.
+                        A troca é super fácil. Enviamos para todo Brasil e para facilitar ainda mais, oferecemos frete
+                        grátis nas compras acima de R$199,00 para a região sudeste e para as demais regiões acima de
+                        R$299,00.
                         Aproveite e desfrute o melhor que nós temos. Nossos produtos!</p>
                 </div>
             </div>
@@ -350,13 +352,16 @@
     </div>
 </div>
 
+<footer>
 
-
+</footer>
 
 
 <script>
     // Menu Stick
-    window.onscroll = function() {scrollFunction()};
+    window.onscroll = function () {
+        scrollFunction()
+    };
 
     function scrollFunction() {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 0) {
