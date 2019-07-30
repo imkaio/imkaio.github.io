@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/aa09fdd343.js"></script>
+</head>
+<body>
+
+<nav class="menu">
+    <div class="burguer">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+
+
+    <ul class="mobile">
+        <li><a href="#">SHOP</a></li>
+        <li><a href="#">NOVIDADES</a></li>
+        <li><a href="#">SALES</a></li>
+    </ul>
+
+    <div class="logo">
+        <img src="logo.png" alt="">
+    </div>
+
+    <ul>
+        <li>
+            <input type="search" placeholder="ENCONTRE O QUE BUSCA" class="home__search">
+            <i class="far fa-search"></i>
+        </li>
+
+        <li>
+            <i class="far fa-heart"></i>
+        </li>
+
+        <li>
+            <i class="fas fa-user"></i>
+        </li>
+
+        <li>
+            <i class="fas fa-shopping-cart"></i>
+        </li>
+    </ul>
+</nav>
+
+
+<script>
+    const navSlide = () => {
+        const burguer = document.querySelector('.burguer')
+        const nav = document.querySelector('ul.mobile')
+
+        burguer.addEventListener('click', () => {
+            nav.classList.toggle('nav-activate');
+        });
+    }
+
+    navSlide()
+</script>
+</body>
+</html>
