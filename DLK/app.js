@@ -1,15 +1,3 @@
-// Menu Mobile
-const navSlide = () => {
-    const burguer = document.querySelector('.burguer')
-    const nav = document.querySelector('ul.mobile')
-
-    burguer.addEventListener('click', () => {
-        nav.classList.toggle('nav-activate');
-    });
-}
-
-navSlide()
-
 // Menu Stick
 window.onscroll = function() {scrollFunction()};
 
