@@ -517,6 +517,24 @@ nav.menu {
       }
     }
   }
+
+  /*** Faixa Frete ***/
+  .faixa__frete--gratis {
+    .frete-gratis {
+      background: pink;
+      p {
+        width: 95%!important;
+        position: relative;
+        padding: 0px 30px;
+      }
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+    }
+  }
 }
 
 

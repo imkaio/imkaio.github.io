@@ -480,6 +480,22 @@ nav.menu .burguer div:nth-child(2) {
     margin-left: 5px;
     letter-spacing: 1px;
   }
+
+  /*** Faixa Frete ***/
+  .faixa__frete--gratis .frete-gratis {
+    background: pink;
+  }
+  .faixa__frete--gratis .frete-gratis p {
+    width: 95% !important;
+    position: relative;
+    padding: 0px 30px;
+  }
+  .faixa__frete--gratis .frete-gratis i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
