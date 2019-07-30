@@ -212,11 +212,12 @@ nav.menu .burguer div:nth-child(2) {
   border-radius: 5px;
 }
 .faixa__frete--gratis .frete-gratis p {
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-weight: 600;
   font-size: 14px;
   margin: 0;
   padding: 0;
+  font-family: "Oswald", sans-serif;
 }
 .faixa__frete--gratis .frete-gratis i {
   background: #000;
@@ -523,6 +524,7 @@ nav.menu .burguer div:nth-child(2) {
   margin: 0;
   padding: 0;
   letter-spacing: 4px;
+  font-family: "Oswald", sans-serif;
 }
 #categorias .categorias__vitrine .categoria__spot .categoria__descricao .nome_categoria span {
   color: #fff;
@@ -530,6 +532,7 @@ nav.menu .burguer div:nth-child(2) {
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 4px;
+  font-family: "Oswald", sans-serif;
 }
 #categorias .categorias__vitrine .categoria__spot .categoria__descricao i {
   color: #fff;
