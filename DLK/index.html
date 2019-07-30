@@ -11,7 +11,8 @@
 </head>
 <body>
 
-<nav class="menu">
+<div class="container-fluid p-0">
+    <nav class="menu">
     <div class="burguer">
         <div class="line1"></div>
         <div class="line2"></div>
@@ -32,7 +33,6 @@
     <ul>
         <li>
             <input type="search" placeholder="ENCONTRE O QUE BUSCA" class="home__search">
-            <i class="far fa-search"></i>
         </li>
 
         <li>
@@ -49,6 +49,63 @@
     </ul>
 </nav>
 
+    <div class="home__banner--principal">
+        <img src="banner_principal.png" alt="">
+    </div>
+</div>
+
+<div class="faixa__frete--gratis">
+    <div class="frete-gratis">
+        <p>FRETE GRÁTIS NAS COMPRAS ACIMA DE R$300,00</p>
+        <i class="fas fa-times"  onclick="fecharFaixaFrete()"></i>
+    </div>
+</div>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+lool <br>
+
 
 <script>
     const navSlide = () => {
@@ -61,6 +118,24 @@
     }
 
     navSlide()
+</script>
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 0) {
+            document.querySelector("nav.menu").style.minHeight = "7vh";
+            document.querySelector("nav.menu").style.background = "#000";
+        } else {
+            document.querySelector("nav.menu").style.minHeight = "10vh";
+            document.querySelector("nav.menu").style.background = "linear-gradient(#000 0%, rgba(0, 0, 0, 0) 100%)";
+        }
+    }
+
+    function fecharFaixaFrete() {
+        var element = document.querySelector(".faixa__frete--gratis");
+        element.classList.add("fecharFaixa");
+    }
 </script>
 </body>
 </html>
