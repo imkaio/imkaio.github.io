@@ -196,6 +196,7 @@ nav.menu .burguer div:nth-child(2) {
   -webkit-animation: faixaFrete 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
   -o-animation: faixaFrete 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
   animation: faixaFrete 1s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  z-index: 50;
 }
 .faixa__frete--gratis .frete-gratis {
   background: #FFC100;
@@ -245,10 +246,10 @@ nav.menu .burguer div:nth-child(2) {
 }
 #lancamento .lancamento__vitrine .lancamento__produto {
   width: 100%;
+  margin-bottom: 25px;
 }
 #lancamento .lancamento__vitrine .lancamento__produto .produto__foto {
-  width: 398px;
-  height: 566px;
+  width: 100%;
   background: #DDD;
 }
 #lancamento .lancamento__vitrine .lancamento__produto .produto__foto img {
@@ -298,11 +299,18 @@ nav.menu .burguer div:nth-child(2) {
 }
 
 /*** Outro ***/
-.outro {
+.banner1, .banner2 {
   width: 100%;
   height: 600px;
   background-color: #FFC100;
   margin: 50px 0px;
+}
+
+.banner2 {
+  width: 100%;
+  height: 600px;
+  background-color: #FFC100;
+  margin: 0px;
 }
 
 /*** Coleções ***/
@@ -318,6 +326,7 @@ nav.menu .burguer div:nth-child(2) {
 }
 #colecoes .colecao__vitrine .colecao__spot {
   width: 100%;
+  margin-bottom: 25px;
   position: relative;
   transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
 }
@@ -433,6 +442,44 @@ nav.menu .burguer div:nth-child(2) {
 .bg__grey {
   background-color: #F3F3F3;
   padding: 20px 0px 50px;
+}
+
+/*** mobile ***/
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header__section span {
+    letter-spacing: 12px;
+  }
+  .header__section h1 {
+    font-size: 36px;
+  }
+
+  .header__section--fluid {
+    width: 100%;
+  }
+  .header__section--fluid span {
+    letter-spacing: 12px;
+  }
+  .header__section--fluid h1 {
+    font-size: 36px;
+  }
+
+  .produto__preco .preço__parcelado {
+    display: flex;
+    align-items: baseline;
+  }
+  .produto__preco .preço__parcelado p {
+    font-size: 14px !important;
+  }
+  .produto__preco .preço__parcelado span {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

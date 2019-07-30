@@ -199,6 +199,7 @@ nav.menu {
   -webkit-animation: faixaFrete 1s cubic-bezier(.74, .06, .4, .92) forwards;
   -o-animation: faixaFrete 1s cubic-bezier(.74, .06, .4, .92) forwards;
   animation: faixaFrete 1s cubic-bezier(.74, .06, .4, .92) forwards;
+  z-index: 50;
 
   .frete-gratis {
     background: #FFC100;
@@ -249,10 +250,10 @@ nav.menu {
 
     .lancamento__produto {
       width: 100%;
+      margin-bottom: 25px;
 
       .produto__foto {
-        width: 398px;
-        height: 566px;
+        width: 100%;
         background: #DDD;
 
         img {
@@ -313,11 +314,17 @@ nav.menu {
 }
 
 /*** Outro ***/
-.outro {
+.banner1, .banner2 {
   width: 100%;
   height: 600px;
   background-color: #FFC100;
   margin: 50px 0px;
+}
+.banner2 {
+  width: 100%;
+  height: 600px;
+  background-color: #FFC100;
+  margin: 0px;
 }
 
 /*** Coleções ***/
@@ -333,6 +340,7 @@ nav.menu {
 
     .colecao__spot {
       width: 100%;
+      margin-bottom: 25px;
       position: relative;
       transition: cubic-bezier(0.68, -0.55, .27, 01.55) 320ms;
 
@@ -467,3 +475,48 @@ nav.menu {
     background-color: #F3F3F3;
     padding: 20px 0px 50px;
   }
+
+/*** mobile ***/
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header__section {
+    span {
+      letter-spacing: 12px;
+    }
+    h1 {
+      font-size: 36px;
+    }
+  }
+
+  .header__section--fluid {
+    width: 100%;
+    span {
+      letter-spacing: 12px;
+    }
+    h1 {
+      font-size: 36px;
+    }
+  }
+
+  .produto__preco {
+    .preço__parcelado {
+      display: flex;
+      align-items: baseline;
+      p {
+        font-size: 14px!important;
+      }
+
+      span {
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-left: 5px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+
