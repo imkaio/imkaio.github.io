@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+p {margin: 0;}
+li {list-style:none}
+/***********************************
+-----> Geral
+************************************/
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/***********************************
+-----> Variaveis
+************************************/
+$azul: #00B0CB;
+$amarelo: #FFC400;
+
+/***********************************
+-----> Mixins
+************************************/
+@mixin cubicTransition {
+  -webkit-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+  -moz-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+  -ms-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+  -o-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+  transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
+}
+@mixin easeTransition {
+  -webkit-transition: ease-in-out 320ms;
+  -moz-transition: ease-in-out 320ms;
+  -ms-transition: ease-in-out 320ms;
+  -o-transition: ease-in-out 320ms;
+  transition: ease-in-out 320ms;
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/***********************************
+-----> Página de Login
+************************************/
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #f7f7f7;
+  overflow: hidden;
+
+  @include flexCenter;
+  
+  .box {
+    width: 95%;
+    height: 95vh;
+    border-radius: 5px;
+    background: #FFF;
+    position: relative;
+
+    .box__header {
+      width: 100%;
+      max-width: 475px;
+      height: 10vh;
+      position: fixed;
+      padding: 0px 25px;
+      display: flex;
+      align-items: center;
+      z-index: 5;
+      background: #FFFFFF;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom: 1px solid rgba(0,0,0,.1);
+      box-shadow: 0 5px 10px rgba(0,0,0,.1);
+      @include cubicTransition;
+      h1 {
+        margin: 0;
+        font-size: 24px;
+        @include cubicTransition;
+      }
+    }
+
+    .box__body {
+      width: 100%;
+      height:  100%;
+      padding: 0px 25px;
+      overflow-y: scroll;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .limit  {
+        display: block;
+        opacity: 1;
+        width: 90%;
+        height: 85%;
+        position: absolute;
+        bottom: 0;
+
+      section.letters {
+        display: flex;
+        width: 100%;
+        margin-bottom: 25px;
+        .letter {
+          width: 20%;
+          span {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #DDD;
+            font-weight: bold;
+            @include flexCenter;
+          }
+        }
+        .list {
+          width: 80%;
+          ul {
+            width: 100%;
+            li {
+              border-bottom: 1px solid rgba(0,0,0,.1);
+              margin-bottom: 15px;
+              padding-bottom: 15px;
+            }
+          }
+        }
+      }
+    }
+    }
+  }
+}
+
+.animate {
+  display: none;
+  width: 95%;
+  height: 50px;
+  position: absolute;
+  bottom: 50px;
+  background: #00B0CB;
+  z-index: 50;
+  animation: drop ease-in-out 1s forwards;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-family: 'Lato';
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}
+
+@keyframes drop {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 50px;
+  }
+}
+
+.sumir {
+  opacity: 1;
+  animation: fades cubic-bezier(0.68, -0.55, 0.27, 1.55) 1250ms forwards;
+}
+
+@keyframes fades {
+  0% {
+    transform:translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform:translateY(100px);
+    opacity: 0;
+    display: none;
+  }
+}
