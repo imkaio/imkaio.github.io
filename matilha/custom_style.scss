@@ -207,3 +207,12 @@ $amarelo: #FFC400;
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .custom__pagina--loginBox {
+    width: 100%!important;
+  }
+  .custom__logarGoogle {
+    margin-top: 5px!important;
+  }
+}
