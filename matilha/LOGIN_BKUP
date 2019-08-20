@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="full-container">
+            <section class="fbits-responsive-login text-center">
+                <h2 class="fbits-title-login">
+                    Entrar
+                </h2>
+
+                <p class="fbits-subtitle-login">Entre com seu email e senha para continuar</p>
+
+                <div class="fbits-box-login">
+
+                    <form action="" class="form-horizontal" method="post" role="form">
+
+                        <Fbits:Login />
+
+                        <FBITS:Recuperar />
+
+                        <div class="fbits-social-login">
+
+                            <Fbits:Facebook />
+                            <Fbits:Google />
+                            <Fbits:Cadastrar />
+
+                        </div>
+                    </form>
+
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+

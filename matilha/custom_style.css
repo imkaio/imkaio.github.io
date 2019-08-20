@@ -26,6 +26,206 @@ body {
 -----> Mixins
 ************************************/
 /***********************************
+-----> Mensagens
+************************************/
+.mensagem_erro {
+  display: none;
+  width: 100%;
+  padding: 10px 15px;
+  color: #ED4747;
+  background: rgba(237, 71, 71, 0.52);
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.mensagem_erro p {
+  font-size: 14px;
+  font-family: "Poppins";
+  padding: 0px;
+}
+
+/*******************************
+-----> Home
+************************************/
+.produtos {
+  width: 100%;
+  display: flex;
+}
+.produtos .grid-item {
+  width: 100%;
+}
+.produtos .grid-item::-webkit-scrollbar {
+  display: none;
+}
+.produtos .main {
+  color: grey;
+  grid-area: main;
+  padding: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.produtos .main::-webkit-scrollbar {
+  display: none;
+}
+.produtos .row {
+  flex-wrap: nowrap;
+}
+.produtos .items {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  flex-grow: 0;
+  margin: 0;
+  padding: 0;
+}
+.produtos .items::-webkit-scrollbar {
+  display: none;
+}
+.produtos .items.active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);
+}
+.produtos .item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background: #F7F7F8;
+  min-height: 550px;
+  min-width: 300px;
+  margin: 2em 1em;
+  border-radius: 5px;
+  border: none;
+  white-space: normal;
+}
+.produtos .item .foto_produto {
+  width: 300px;
+  height: 300px;
+  margin-top: -1px !important;
+  background: #939393;
+  border-radius: 5px;
+  position: relative;
+}
+.produtos .item .foto_produto .tag_categoria {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #FFC400;
+  font-size: 12px;
+  padding: 5px 15px;
+  border-radius: 50px;
+  color: #232323;
+}
+.produtos .item .descricao_produto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.produtos .item .descricao_produto .nome_produto {
+  width: 100%;
+  text-align: center;
+}
+.produtos .item .descricao_produto .nome_produto h1 {
+  font-size: 14px;
+  font-family: "Poppins";
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.produtos .item .descricao_produto .classificao_produto {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin: 10px 0px;
+}
+.produtos .item .descricao_produto .classificao_produto i {
+  font-size: 14px;
+  color: #FFC400;
+  margin-left: 5px;
+}
+.produtos .item .descricao_produto .classificao_produto i:first-child {
+  margin-left: 0px;
+}
+.produtos .item .descricao_produto .preco_produto {
+  width: 100%;
+  margin: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.produtos .item .descricao_produto .preco_produto .apartir {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: right;
+  height: 50px;
+  border-right: 1px solid rgba(35, 35, 35, 0.17);
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.produtos .item .descricao_produto .preco_produto .apartir p {
+  font-size: 14px;
+  color: grey;
+  opacity: 0.5;
+  font-weight: bold;
+}
+.produtos .item .descricao_produto .preco_produto .apartir p:nth-child(2) {
+  margin-top: -10px;
+}
+.produtos .item .descricao_produto .preco_produto .por {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 50px;
+}
+.produtos .item .descricao_produto .preco_produto .por p {
+  font-size: 24px;
+  color: #FFC400;
+  font-weight: bold;
+}
+.produtos .item .descricao_produto .preco_produto .por .parcelas {
+  font-size: 14px;
+  color: rgba(128, 128, 128, 0.44);
+  font-weight: bold;
+  margin-top: -5px;
+}
+.produtos .item .descricao_produto .preco_produto .por .parcelas span {
+  color: #00B0CB;
+}
+.produtos .item .descricao_produto .btn_comprar {
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+.produtos .item .descricao_produto .btn_comprar button {
+  width: 90%;
+  padding: 15px;
+  background: #3DB670;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: ease-in-out 300ms;
+}
+.produtos .item .descricao_produto .btn_comprar button:hover {
+  background: #217f12;
+  transform: scale(0.97);
+}
+.produtos .item:first-child {
+  margin-left: 0;
+}
+
+/*******************************
 -----> Página de Login
 ************************************/
 #custom__pagina--login {
@@ -34,10 +234,39 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+#custom__pagina--login .custom__pagina--login--header {
+  width: 100%;
+  height: 100px;
+  background: #00B0CB;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#custom__pagina--login .custom__pagina--login--header .custom__pagina--login--header__wrapper {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#custom__pagina--login .custom__pagina--login--header .custom__pagina--login--header__wrapper .logo {
+  width: fit-content;
+}
+#custom__pagina--login .custom__pagina--login--header .custom__pagina--login--header__wrapper .logo h1 {
+  font-size: 28px;
+  color: #FFF;
+  font-weight: bold;
+}
+#custom__pagina--login .custom__pagina--login--header .custom__pagina--login--header__wrapper span {
+  font-size: 16px;
+  color: #FFF;
+  font-weight: bold;
 }
 #custom__pagina--login .custom__pagina--loginBox {
   width: 50%;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 #custom__pagina--login .custom__pagina--loginBox .custom__login {
   display: flex;
@@ -124,8 +353,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 35px;
-  padding-top: 50px;
+  padding-top: 25px;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 #custom__pagina--login .custom__pagina--loginBox .custom__login--logarSocial span {
@@ -151,6 +379,7 @@ body {
   letter-spacing: 1px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: "Poppins", sans-serif;
   -webkit-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
   -moz-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
   -ms-transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
@@ -187,6 +416,15 @@ body {
 #custom__pagina--login .custom__pagina--loginBox .custom__login--logarSocial .custom__login--logarSocial--btn .custom__login--criarConta:hover {
   background: #FFC400;
   color: #FFF;
+}
+
+footer.custom__login--footer {
+  width: 100%;
+  height: 300px;
+  background: #DDD;
+  display: flex;
+  align-self: flex-end;
+  padding-top: 100px;
 }
 
 @media screen and (max-width: 768px) {

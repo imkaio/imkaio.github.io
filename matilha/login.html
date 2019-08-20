@@ -16,6 +16,20 @@
 <body>
 
 <div class="container-fluid p-0" id="custom__pagina--login">
+    <div class="custom__pagina--login--header">
+        <div class="container">
+            <div class="custom__pagina--login--header__wrapper">
+                <div class="logo">
+                    <h1>Logo</h1>
+                </div>
+                <div class="televendas">
+                    <span>
+                        Televendas: 0800-010-1020
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="custom__pagina--loginBox">
@@ -27,6 +41,9 @@
                 <div class="custom__login--campoLogin">
                     <input type="email" placeholder="Seu email">
                     <input type="password" placeholder="Sua senha">
+                    <div class="mensagem_erro mensagem__cadastro">
+                        <p>Senha ou e-mail não conferem.</p>
+                    </div>
                     <button class="custom__login--btnLogar">Entrar</button>
                     <span>Esqueceu sua senha? <a class="custom__login--recuperar" href="#">Clique aqui</a>, para recuperar!</span>
                 </div>
@@ -35,12 +52,12 @@
                 <span>Ou entre usando suas redes sociais</span>
                 <div class="custom__login--logarSocial--btn">
                     <div class="row">
-                        <div class="col-12 col-md-6">
+                        <div class="col-6 col-md-6">
                             <button class="custom__logarFacebook">
                                 <i class="fab fa-facebook-f"></i> ENTRAR COM O FACEBOOK
                             </button>
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-6 col-md-6">
                             <button class="custom__logarGoogle">
                                 <i class="fab fa-google"></i> ENTRAR COM O GOOGLE
                             </button>
@@ -56,6 +73,9 @@
         </div>
     </div>
 
+    <footer>
+        <div class="novo__footer"></div>
+    </footer>
 </div>
 
 <script src="custom_app.js"></script>
