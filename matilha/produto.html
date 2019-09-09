@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <!-- Styles do Site -->
+    <link rel="stylesheet" href="custom_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/aa09fdd343.js"></script>
+</head>
+<body>
+
+
+<div class="container-fluid p-0" style="margin-top: 15px;">
+    <div id="produto-single">
+        <div class="container">
+            <div class="produto_main">
+                <div class="row">
+                    <div class="col-12 col-md-7">
+                        <div class="produto__foto--principal">
+
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-5">
+                        <div class="informacoes__produto">
+                            <div class="produto__nome">
+                                <h1>Rede para gatos confort para
+                                    uso em cadeiras</h1>
+                            </div>
+
+                            <div class="produto__infos">
+                                    <div class="estrelas">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <p>( 130 visualizações )</p>
+
+                                    </div>
+
+                                    <div class="sku">
+                                        <p>SKU 0000</p>
+                                    </div>
+
+
+                                <div class="btn__favorito">
+                                    <button>adicionar à lista de desejos</button>
+                                </div>
+                            </div>
+
+                            <div class="precos__produtos">
+                                <div class="row no-gutters" >
+                                    <div class="col-12 col-md-7">
+                                        <div class="precoDe">
+                                            <span>A PARTIR DE </span>
+                                            R$  100,00
+                                        </div>
+                                        <div class="precoPor">
+                                            <span>R$  1000,00</span>
+                                            <p>
+                                                6 x de <span>R$ 14,98</span> sem juros
+                                            </p>
+                                            <p>
+                                                ou <span>R$ 85,41</span> à vista
+                                            </p>
+                                        </div>
+                                        <div class="alertaDePreco">
+                                            <i class="fas fa-bell"></i> Alerta de Preço
+                                        </div>
+
+                                        <div class="quantidade">
+                                            <div class="box__quantidade">
+                                                <div class="box__numero">
+                                                    1
+                                                </div>
+                                                <div class="box__tamanhos">
+                                                    <p>Escolha <span>o tamanho</span></p>
+                                                    <div class="filtro">
+                                                        <div class="tamanhos">P</div>
+                                                        <div class="tamanhos">M</div>
+                                                        <div class="tamanhos">G</div>
+                                                        <div class="tamanhos">GG</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box__quantidade">
+                                                <div class="box__numero">
+                                                    2
+                                                </div>
+                                                <div class="box__tamanhos">
+                                                    <p>Escolha <span>a cor</span></p>
+                                                    <div class="filtro">
+                                                        <div class="cor"></div>
+                                                        <div class="cor"></div>
+                                                        <div class="cor"></div>
+                                                        <div class="cor"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box__quantidade">
+                                                <div class="box__numero">
+                                                    3
+                                                </div>
+                                                <div class="box__tamanhos">
+                                                    <p>Escolha <span>a quantidade</span></p>
+                                                    <div class="filtro">
+                                                        <div class="quantidadeBar">
+                                                            <div>-</div>
+                                                            <div>0</div>
+                                                            <div>+</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-5">
+                                        <div class="opcao__parcelamento" onclick="abrirParcelamento()">
+                                            <div>
+                                            <i class="fas fa-credit-card"></i>
+                                            <p>parcelamentos</p>
+                                            </div>
+                                            <span>+</span>
+
+                                            <div class="opcoesParcelaento_aberto">
+                                                <ul>
+                                                    <li>6x de R$ 20,00</li>
+                                                    <li>6x de R$ 20,00</li>
+                                                    <li>6x de R$ 20,00</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="opcao__comoMedir">
+                                            como medir
+                                        </div>
+
+                                        <div class="plaquinha">
+                                            <p>Plaquinha Gravada</p>
+                                            <span>OPCIONAL</span>
+
+                                            <div class="inputs">
+                                                <input type="text" placeholder="Nome do pet">
+                                                <input type="text" placeholder="Tel de contato">
+                                            </div>
+                                        </div>
+
+                                        <div class="btn__comprar">
+                                            comprar agora
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="custom_app.js"></script>
+<script>
+    function abrirParcelamento() {
+        var parAberto = document.querySelector(".opcoesParcelaento_aberto");
+        var indicacao = document.querySelector('.opcao__parcelamento span');
+        if (parAberto.style.display === "none") {
+            parAberto.style.display = "flex";
+            indicacao.innerHTML = "-"
+        } else {
+            parAberto.style.display = "none";
+            indicacao.innerHTML = "+"
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <!-- Styles do Site -->
+    <link rel="stylesheet" href="custom_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/aa09fdd343.js"></script>
+</head>
+<body>
+
+
+<div class="container-fluid p-0">
+    <div id="header__categoria">
+        <div class="container">
+            <div class="descricao__categoria">
+                <h1>Capas e Assentos Pet <br> para Carro</h1>
+                <p class="texto__descricao">
+                    Transporte seu pet no carro com higiene e segurança. Conheça as opções de capas impermeáveis para
+                    proteger o estofado e peitorais e guias para cinto de segurança<span id="dots">...</span>
+                    <span id="more">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias debitis doloribus
+                        ducimus eius eligendi esse eum explicabo harum illo illum ipsa maiores officia optio,
+                        possimus quisquam reprehenderit saepe tempore vitae.</span>
+
+                </p>
+
+                <button id="carregar_mais-descricao" onclick="functionRead()" id="myBtn">Ler mais</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid p-0">
+    <div id="container_filtro">
+        <div class="container p-0">
+            <div class="filtro_categoria">
+                <p>
+                    home <span>> nome da categoria</span>
+                </p>
+
+                <button onclick="functionAbrirFiltro()" class="filtro__btn">
+                    + Filtro
+                </button>
+
+                <div class="filtro__aberto">
+                    Filtro da Tray
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="custom_app.js"></script>
+<script>
+    function functionAbrirFiltro() {
+        var x = document.querySelector(".filtro__aberto");
+        var btnFiltro = document.querySelector('.filtro__btn');
+        if (x.style.display === "flex") {
+            x.style.display = "none";
+            btnFiltro.innerHTML = "+ Filtro"
+        } else {
+            x.style.display = "flex";
+            btnFiltro.innerHTML = "- Filtro"
+        }
+    }
+</script>
+
+<script>
+    function functionRead() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+        }
+    }
+</script>
+<script>
+    if ('loading' in HTMLImageElement.prototype) {
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        images.forEach(img => {
+            img.src = img.dataset.src;
+        });
+    } else {
+        // Dynamically import the LazySizes library
+        const script = document.createElement('script');
+        script.src =
+            'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.8/lazysizes.min.js';
+        document.body.appendChild(script);
+    }
+
+</script>
+</body>
+</html>
