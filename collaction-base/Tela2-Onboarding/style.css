@@ -1,64 +1,90 @@
-/*
-Error: Invalid CSS after "... 'nunitoregular": expected ";", was "';"
-        on line 91 of style.scss
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .container .wrapper {
+    width: 90%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .container .wrapper .floatHeader {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      justify-content: space-between;
+      border-top: 1px solid #eee; }
+      .container .wrapper .floatHeader a, .container .wrapper .floatHeader span {
+        font-weight: normal;
+        margin-right: 6%;
+        margin-left: 6%;
+        font-size: 14px;
+        color: #7c37a6;
+        font-family: 'nunitoblack'; }
+        .container .wrapper .floatHeader a:first-child, .container .wrapper .floatHeader span:first-child {
+          opacity: 0.5;
+          font-family: 'nunitolight'; }
+        .container .wrapper .floatHeader a:last-child, .container .wrapper .floatHeader span:last-child {
+          opacity: 1;
+          font-family: 'nunitoblack'; }
+    .container .wrapper .content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .container .wrapper .content .IcongPage {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        animation: FadeIn ease-in-out 680ms forwards; }
+        .container .wrapper .content .IcongPage img {
+          max-width: 50%;
+          width: 100%;
+          height: auto; }
+      .container .wrapper .content .title-boarding {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        opacity: 0;
+        animation: FadeIn ease-in-out 680ms forwards; }
+        .container .wrapper .content .title-boarding h1 {
+          font-weight: bold;
+          font-size: 20px;
+          text-align: center;
+          color: #7c37a6;
+          font-family: 'nunitoblack'; }
+        .container .wrapper .content .title-boarding p {
+          color: #232323;
+          opacity: 0.5;
+          font-size: 14px;
+          margin-top: 10px;
+          text-align: center;
+          font-family: 'nunitoregular'; }
+      .container .wrapper .content .steps {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 50px 0px 0px 0px; }
+        .container .wrapper .content .steps div {
+          width: 50px;
+          height: 5px;
+          background: #7C37A6;
+          border-radius: 50px; }
+          .container .wrapper .content .steps div:nth-child(1) {
+            opacity: .5; }
+          .container .wrapper .content .steps div:nth-child(2) {
+            opacity: 1; }
+          .container .wrapper .content .steps div:nth-child(3) {
+            opacity: .5; }
 
-86:           color: #232323;
-87:           opacity: 0.5;
-88:           font-size: 14px;
-89:           margin-top: 10px;
-90:           text-align: center;
-91:           font-family: 'nunitoregular';
-92:         }
-93:       }
-94: 
-95:       .steps {
-96:         width: 100%;
-
-Backtrace:
-style.scss:91
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:815:in `block in try_declaration'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1284:in `rethrow'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:820:in `try_declaration'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:743:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:23:in `load'
-/usr/local/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"... 'nunitoregular\": expected \";\", was \"';\"\A         on line 91 of style.scss\A \A 86:           color: #232323;\A 87:           opacity: 0.5;\A 88:           font-size: 14px;\A 89:           margin-top: 10px;\A 90:           text-align: center;\A 91:           font-family: 'nunitoregular';\A 92:         }\A 93:       }\A 94: \A 95:       .steps {\A 96:         width: 100%;"; }
+/*# sourceMappingURL=style.css.map */
