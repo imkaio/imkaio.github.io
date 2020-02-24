@@ -172,21 +172,20 @@
           margin: 1px;
           overflow: hidden;
           cursor: pointer;
-          min-width: 135px;
-          max-width: 135px;
-          height: 135px;
-          min-height: 135px;
+          min-width: 100px;
+          height: 115px;
+          min-height: 115px;
           flex: 1; }
           .container .TimeLineColecoes .colecao-block .images-block div:hover img {
             transform: scale(1.2); }
           .container .TimeLineColecoes .colecao-block .images-block div:nth-child(1) {
             flex: 2;
-            min-width: 203px;
-            height: 200px; }
+            min-width: 45%;
+            height: 150px; }
           .container .TimeLineColecoes .colecao-block .images-block div:nth-child(2) {
             flex: 2;
-            min-width: 203px;
-            height: 200px; }
+            min-width: 45%;
+            height: 150px; }
           .container .TimeLineColecoes .colecao-block .images-block div img {
             max-width: 100%;
             height: auto;

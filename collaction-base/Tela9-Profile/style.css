@@ -116,7 +116,7 @@
             .container .ProfileHeader .UserDetails .UserData .DataBlock .number span {
               opacity: .5;
               font-size: 12px;
-              margin-top: -8px;
+              margin-top: -3px;
               font-family: 'nunitoregular'; }
         .container .ProfileHeader .UserDetails .UserData .buttonProfile {
           width: 100%;
@@ -167,7 +167,7 @@
           font-size: 22px;
           font-family: 'nunitobold'; }
         .container .ProfileHeader .UserBio .NameUser span {
-          margin-top: -5px;
+          margin-top: -2px;
           opacity: 0.5;
           font-family: 'nunitoregular'; }
       .container .ProfileHeader .UserBio .biograph {

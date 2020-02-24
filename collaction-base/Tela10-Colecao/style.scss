@@ -231,10 +231,9 @@
           margin: 1px;
           overflow: hidden;
           cursor: pointer;
-          min-width: 135px;
-          max-width: 135px;
-          height: 135px;
-          min-height: 135px;
+          min-width: 100px;
+          height: 115px;
+          min-height: 115px;
           flex: 1;
 
           &:hover {
@@ -245,14 +244,14 @@
 
           &:nth-child(1) {
             flex: 2;
-            min-width: 203px;
-            height: 200px;
+            min-width: 45%;
+            height: 150px;
 
           }
           &:nth-child(2) {
             flex: 2;
-            min-width: 203px;
-            height: 200px;
+            min-width: 45%;
+            height: 150px;
 
           }
 
