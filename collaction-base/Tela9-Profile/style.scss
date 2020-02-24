@@ -310,7 +310,7 @@
         margin: 1px;
         overflow: hidden;
         cursor: pointer;
-        min-width: 135px;
+        min-width: 100px;
         height: 135px;
         min-height: 135px;
         flex: 1;
@@ -326,14 +326,15 @@
         }
 
         &:nth-child(1) {
-          flex: 2;
-          min-width: 203px;
+          flex: 1;
+          min-width: 45%;
           height: 200px;
 
         }
         &:nth-child(2) {
-          flex: 2;
-          min-width: 203px;
+          flex: 1;
+          min-width: 45%;
+
           height: 200px;
 
         }
