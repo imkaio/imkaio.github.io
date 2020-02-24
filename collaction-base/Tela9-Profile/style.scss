@@ -157,7 +157,7 @@
             span {
               opacity: .5;
               font-size: 12px;
-              margin-top: -3px;
+              margin-top: 5px;
               font-family: 'nunitoregular';
 
             }
@@ -216,6 +216,7 @@
       display: flex;
       flex-direction: column;
       margin-top: 20px;
+      overflow: hidden;
 
       .NameUser {
         display: flex;
@@ -228,15 +229,15 @@
         }
         span {
           margin-top: 5px;
+          color: red;
           opacity: .5;
           font-family: 'nunitoregular';
-
         }
       }
 
       .biograph {
         width: 100%;
-        margin-top: 8px;
+        margin-top: 10px;
         p {
           font-size: 14px;
           font-family: 'nunitoregular';
@@ -252,7 +253,7 @@
         padding-bottom: 15px;
         border-top: 1px solid #eeeeee;
         border-bottom: 1px solid #eeeeee;
-        overflow: auto;
+        overflow-y: auto;
         .storieblock {
           width: 50px;
           display: flex;

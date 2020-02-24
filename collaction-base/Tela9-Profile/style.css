@@ -116,7 +116,7 @@
             .container .ProfileHeader .UserDetails .UserData .DataBlock .number span {
               opacity: .5;
               font-size: 12px;
-              margin-top: -3px;
+              margin-top: 5px;
               font-family: 'nunitoregular'; }
         .container .ProfileHeader .UserDetails .UserData .buttonProfile {
           width: 100%;
@@ -158,7 +158,8 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      margin-top: 20px; }
+      margin-top: 20px;
+      overflow: hidden; }
       .container .ProfileHeader .UserBio .NameUser {
         display: flex;
         width: 100%;
@@ -168,11 +169,12 @@
           font-family: 'nunitobold'; }
         .container .ProfileHeader .UserBio .NameUser span {
           margin-top: 5px;
+          color: red;
           opacity: .5;
           font-family: 'nunitoregular'; }
       .container .ProfileHeader .UserBio .biograph {
         width: 100%;
-        margin-top: 8px; }
+        margin-top: 10px; }
         .container .ProfileHeader .UserBio .biograph p {
           font-size: 14px;
           font-family: 'nunitoregular'; }
@@ -184,7 +186,7 @@
         padding-bottom: 15px;
         border-top: 1px solid #eeeeee;
         border-bottom: 1px solid #eeeeee;
-        overflow: auto; }
+        overflow-y: auto; }
         .container .ProfileHeader .UserBio .UserStories .storieblock {
           width: 50px;
           display: flex;
