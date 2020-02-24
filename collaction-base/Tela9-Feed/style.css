@@ -1,10 +1,8 @@
 .container {
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
-  overflow-scrolling: touch;
   display: flex;
-  justify-content: center; }
+  justify-content: flex-start; }
   .container .FeedHeader {
     width: 100%;
     height: 70px;
@@ -38,17 +36,13 @@
       padding: 0;
       margin: 10px 0px 0px 0px; }
   .container .historias {
-    width: 100px;
+    width: 20%;
     height: 100vh;
     display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     z-index: 6;
     position: fixed;
     right: 0;
     background: #FFF;
-    overflow-y: auto;
     box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.2);
     animation: openHistorias ease-in-out 280ms forwards; }
 @keyframes openHistorias {
@@ -56,19 +50,26 @@
     transform: translateX(100px); }
   100% {
     transform: translateX(0px); } }
-    .container .historias div {
-      width: 50px;
-      height: 50px;
-      background: pink;
-      border-radius: 50%;
-      margin-bottom: 10px; }
+    .container .historias .allstories {
+      width: 100%;
+      overflow: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .container .historias .allstories div {
+        width: 50px;
+        height: 50px;
+        background: pink;
+        border-radius: 50%;
+        margin-bottom: 10px; }
   .container .Timeline {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 100%;
     margin-top: 70px;
-    transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 5320ms; }
+    transition: ease-in-out 280ms; }
     .container .Timeline .post {
       width: 100%;
       margin-bottom: 8px; }

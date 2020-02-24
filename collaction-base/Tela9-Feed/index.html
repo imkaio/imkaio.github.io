@@ -24,7 +24,7 @@
             <img src="../assets/Images/fulllogo-black.svg" alt="">
         </div>
     </div>
-    <div class="Timeline">
+    <div class="Timeline" id="timeline">
         <div class="post">
             <div class="media">
                 <img src="https://images.pexels.com/photos/3662126/pexels-photo-3662126.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
@@ -271,28 +271,32 @@
 
 
     <div class="historias" id="Div1">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="allstories">
+
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </div>
     </div>
 </div>
 
@@ -303,9 +307,12 @@
 
             if (document.getElementById('Div1').style.display == 'none') {
                 document.getElementById('Div1').style.display = 'flex';
+                document.getElementById('timeline').style.width = '80%';
+
             }
             else {
                 document.getElementById('Div1').style.display = 'none';
+                document.getElementById('timeline').style.width = '100%';
             }
         }
     }

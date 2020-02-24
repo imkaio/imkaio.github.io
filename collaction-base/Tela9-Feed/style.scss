@@ -1,10 +1,8 @@
 .container {
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
-  overflow-scrolling: touch;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 
   //.wrapper {
   //  width: 90%;
@@ -58,17 +56,13 @@
   }
 
   .historias {
-    width: 100px;
+    width: 20%;
     height: 100vh;
     display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     z-index: 6;
     position: fixed;
     right: 0;
     background: #FFF;
-    overflow-y: auto;
     box-shadow: 5px 0px 20px rgba(0,0,0,.2);
     animation: openHistorias ease-in-out 280ms forwards;
     @keyframes openHistorias {
@@ -79,12 +73,22 @@
         transform: translateX(0px);
       }
     }
-    div {
-      width: 50px;
-      height:50px;
-      background: pink;
-      border-radius: 50%;
-      margin-bottom: 10px;
+
+    .allstories {
+      width: 100%;
+      overflow: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      div {
+        width: 50px;
+        height:50px;
+        background: pink;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
     }
   }
   .Timeline {
@@ -93,7 +97,7 @@
     width: 100%;
     max-width: 100%;
     margin-top: 70px;
-    transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 5320ms;
+    transition: ease-in-out 280ms;
 
 
     .post {
