@@ -16,8 +16,9 @@
       height: 50px;
       display: flex;
       align-items: center;
-      position: absolute;
+      position: fixed;
       bottom: 0;
+      left: 0;
       justify-content: space-between;
       border-top: 1px solid #eee; }
       .container .wrapper .floatHeader a, .container .wrapper .floatHeader span {
@@ -26,13 +27,11 @@
         margin-left: 6%;
         font-size: 14px;
         color: #7c37a6;
-        font-family: 'nunitoblack'; }
+        font-family: 'Montserrat Bold'; }
         .container .wrapper .floatHeader a:first-child, .container .wrapper .floatHeader span:first-child {
-          opacity: 0.5;
-          font-family: 'nunitolight'; }
+          opacity: 0.5; }
         .container .wrapper .floatHeader a:last-child, .container .wrapper .floatHeader span:last-child {
-          opacity: 1;
-          font-family: 'nunitoblack'; }
+          opacity: 1; }
     .container .wrapper .content {
       width: 100%;
       display: flex;

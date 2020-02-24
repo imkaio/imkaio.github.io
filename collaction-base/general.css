@@ -90,3 +90,148 @@ input, button, textarea {
     font-weight: normal;
     font-style: normal;
 }
+
+
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('assets/Fonts/Montserrat Regular'), url('assets/Fonts/Montserrat-Regular.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Montserrat Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('assets/Fonts/Montserrat Italic'), url('assets/Fonts/Montserrat-Italic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Montserrat Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('assets/Fonts/Montserrat Thin'), url('assets/Fonts/Montserrat-Thin.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Montserrat Thin Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('assets/Fonts/Montserrat Thin Italic'), url('assets/Fonts/Montserrat-ThinItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Montserrat ExtraLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('assets/Fonts/Montserrat ExtraLight'), url('assets/Fonts/Montserrat-ExtraLight.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Montserrat ExtraLight Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('assets/Fonts/Montserrat ExtraLight Italic'), url('assets/Fonts/Montserrat-ExtraLightItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Montserrat Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('assets/Fonts/Montserrat Light'), url('assets/Fonts/Montserrat-Light.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Montserrat Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('assets/Fonts/Montserrat Light Italic'), url('assets/Fonts/Montserrat-LightItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Montserrat Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('assets/Fonts/Montserrat Medium'), url('assets/Fonts/Montserrat-Medium.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Montserrat Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('assets/Fonts/Montserrat Medium Italic'), url('assets/Fonts/Montserrat-MediumItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Montserrat SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('assets/Fonts/Montserrat SemiBold'), url('assets/Fonts/Montserrat-SemiBold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Montserrat SemiBold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('assets/Fonts/Montserrat SemiBold Italic'), url('assets/Fonts/Montserrat-SemiBoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('assets/Fonts/Montserrat Bold'), url('assets/Fonts/Montserrat-Bold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Montserrat Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('assets/Fonts/Montserrat Bold Italic'), url('assets/Fonts/Montserrat-BoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Montserrat ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('assets/Fonts/Montserrat ExtraBold'), url('assets/Fonts/Montserrat-ExtraBold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Montserrat ExtraBold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('assets/Fonts/Montserrat ExtraBold Italic'), url('assets/Fonts/Montserrat-ExtraBoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Montserrat Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('assets/Fonts/Montserrat Black'), url('assets/Fonts/Montserrat-Black.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Montserrat Black Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('assets/Fonts/Montserrat Black Italic'), url('assets/Fonts/Montserrat-BlackItalic.woff') format('woff');
+}
