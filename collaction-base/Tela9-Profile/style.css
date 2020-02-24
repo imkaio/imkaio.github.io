@@ -65,9 +65,8 @@
         margin: 10px 0px 0px 0px; }
     .container .FeedHeader .profilename {
       font-size: 16px;
-      font-weight: bold;
-      color: #7c37a6;
-      font-family: 'nunitobold'; }
+      color: #232323;
+      font-family: 'nunitoregular'; }
   .container .ProfileHeader {
     display: flex;
     flex-direction: column;
@@ -118,6 +117,9 @@
               font-size: 12px;
               margin-top: 0px;
               font-family: 'nunitoregular'; }
+              @media screen and (max-width: 414px) {
+                .container .ProfileHeader .UserDetails .UserData .DataBlock .number span {
+                  margin-top: -5px; } }
         .container .ProfileHeader .UserDetails .UserData .buttonProfile {
           width: 100%;
           display: flex;
@@ -170,6 +172,9 @@
           margin-top: 0px;
           opacity: .5;
           font-family: 'nunitoregular'; }
+          @media screen and (max-width: 414px) {
+            .container .ProfileHeader .UserBio .NameUser span {
+              margin-top: -5px; } }
       .container .ProfileHeader .UserBio .biograph {
         width: 100%;
         margin-top: 10px; }
@@ -237,10 +242,11 @@
         margin: 1px;
         overflow: hidden;
         cursor: pointer;
-        min-width: 100px;
-        height: 135px;
-        min-height: 135px;
-        flex: 1; }
+        flex: 1 32%;
+        height: 100px;
+        width: unset;
+        min-width: unset;
+        max-width: unset; }
         .container .FeedProfile .galleryfeed div:last-child {
           max-width: 136px; }
         .container .FeedProfile .galleryfeed div:hover img {
