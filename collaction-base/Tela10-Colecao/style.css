@@ -73,8 +73,7 @@
     width: 95%;
     max-width: 100%;
     margin-top: 90px;
-    margin-bottom: 25px;
-    transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms; }
+    margin-bottom: 25px; }
     .container .ProfileHeader .UserDetails {
       width: 100%;
       display: flex;
@@ -116,7 +115,7 @@
             .container .ProfileHeader .UserDetails .UserData .DataBlock .number span {
               opacity: .5;
               font-size: 12px;
-              margin-top: -8px;
+              margin-top: 0px;
               font-family: 'nunitoregular'; }
         .container .ProfileHeader .UserDetails .UserData .buttonProfile {
           width: 100%;
@@ -131,7 +130,7 @@
               height: 40px;
               border-radius: 5px;
               font-family: 'nunitosemibold';
-              border: 2px solid #7c37a6;
+              border: 1px solid #7c37a6;
               background: transparent;
               text-align: center;
               font-size: 14px;
