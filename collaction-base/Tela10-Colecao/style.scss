@@ -166,7 +166,8 @@
           display: flex;
           margin-top: 8px;
           justify-content: space-between;
-          a {            width: 70%;
+          a {
+            width: 75%;
 
 
             .btn-direct {
@@ -174,8 +175,8 @@
               display: flex;
               height: 40px;;
               border-radius: 5px;
-              font-family: 'nunitobold';
-              border: 1px solid #7c37a6;
+              font-family: 'nunitosemibold';
+              border: 2px solid #7c37a6;
               background: transparent;
               text-align: center;
               font-size: 14px;
