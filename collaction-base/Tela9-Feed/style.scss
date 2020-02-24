@@ -57,7 +57,6 @@
 
   .historias {
     width: 20%;
-    height: 100vh;
     display: none;
     z-index: 6;
     position: fixed;
@@ -88,6 +87,9 @@
         background: pink;
         border-radius: 50%;
         margin-bottom: 10px;
+        &:first-child {
+          margin-top: 80px;
+        }
       }
     }
   }
