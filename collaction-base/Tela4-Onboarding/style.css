@@ -1,0 +1,102 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .wrapper {
+  width: 90%;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .wrapper .floatHeader {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+}
+.container .wrapper .floatHeader a, .container .wrapper .floatHeader span {
+  font-weight: normal;
+  margin-right: 6%;
+  margin-left: 6%;
+  font-size: 14px;
+  color: #7c37a6;
+}
+.container .wrapper .floatHeader a:first-child, .container .wrapper .floatHeader span:first-child {
+  opacity: 0.5;
+}
+.container .wrapper .floatHeader a:last-child, .container .wrapper .floatHeader span:last-child {
+  opacity: 1;
+}
+.container .wrapper .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .wrapper .content .IcongPage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  animation: FadeIn ease-in-out 680ms forwards;
+}
+.container .wrapper .content .IcongPage img {
+  max-width: 50%;
+  width: 100%;
+  height: auto;
+}
+.container .wrapper .content .title-boarding {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  opacity: 0;
+  animation: FadeIn ease-in-out 680ms forwards;
+}
+.container .wrapper .content .title-boarding h1 {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: #7c37a6;
+}
+.container .wrapper .content .title-boarding p {
+  color: #232323;
+  opacity: 0.5;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+.container .wrapper .content .steps {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0px 0px 0px;
+}
+.container .wrapper .content .steps div {
+  width: 50px;
+  height: 5px;
+  background: #7C37A6;
+  border-radius: 50px;
+}
+.container .wrapper .content .steps div:nth-child(1) {
+  opacity: 0.5;
+}
+.container .wrapper .content .steps div:nth-child(2) {
+  opacity: 1;
+}
+.container .wrapper .content .steps div:nth-child(3) {
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=style.css.map */

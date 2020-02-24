@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72.36" height="65.424" viewBox="0 0 72.36 65.424">
+  <g id="Group" transform="translate(1.5 1.5)">
+    <path id="Shape" d="M69.36,55.488a6.936,6.936,0,0,1-6.936,6.936H3.468C3.105,62.424,0,59.319,0,55.488V17.34A6.936,6.936,0,0,1,6.936,10.4h10.4L24.276,0H45.084L52.02,10.4h10.4A6.936,6.936,0,0,1,69.36,17.34Z" transform="translate(0)" fill="none" stroke="#d1d1d1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3"/>
+    <ellipse id="Oval" cx="13.872" cy="13.872" rx="13.872" ry="13.872" stroke-width="3" transform="translate(20.808 20.808)" stroke="#d1d1d1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    transition: ease-in-out 320ms;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body, input, button, a, textarea {
+    font-family: 'Poppins';
+}
+
+/* animations */
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

@@ -1,0 +1,253 @@
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-scrolling: touch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .container .FeedHeader {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #eeeeee;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    z-index: 5;
+    transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 520ms !important; }
+    .container .FeedHeader .menu {
+      flex: 1;
+      width: 70px;
+      height: 70px;
+      position: fixed;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .container .FeedHeader .menu:after {
+        content: ''; }
+      .container .FeedHeader .menu .bars {
+        display: flex;
+        flex-direction: column; }
+        .container .FeedHeader .menu .bars img {
+          max-width: 20px;
+          height: auto;
+          width: 100%; }
+    .container .FeedHeader .menu-right {
+      flex: 1;
+      width: 70px;
+      height: 70px;
+      position: fixed;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .container .FeedHeader .menu-right:after {
+        content: ''; }
+      .container .FeedHeader .menu-right .bars {
+        display: flex;
+        flex-direction: column; }
+        .container .FeedHeader .menu-right .bars img {
+          max-width: 20px;
+          height: auto;
+          width: 100%; }
+    .container .FeedHeader .logo {
+      flex: 2;
+      display: flex; }
+      .container .FeedHeader .logo img {
+        max-width: 100px;
+        height: auto;
+        padding: 0;
+        margin: 10px 0px 0px 0px; }
+    .container .FeedHeader .profilename {
+      font-size: 16px;
+      font-weight: bold;
+      color: #4A4A4A; }
+  .container .ProfileHeader {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 100%;
+    margin-top: 90px;
+    transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 5320ms; }
+    .container .ProfileHeader .UserDetails {
+      width: 100%;
+      display: flex;
+      align-items: center; }
+      .container .ProfileHeader .UserDetails .UserPhoto {
+        width: 20%;
+        flex: 1;
+        display: flex; }
+        .container .ProfileHeader .UserDetails .UserPhoto .div {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          background: #7c37a6;
+          overflow: hidden; }
+          .container .ProfileHeader .UserDetails .UserPhoto .div img {
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+      .container .ProfileHeader .UserDetails .UserData {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        width: 75%; }
+        .container .ProfileHeader .UserDetails .UserData .DataBlock {
+          display: flex;
+          width: 100%;
+          justify-content: space-between; }
+          .container .ProfileHeader .UserDetails .UserData .DataBlock .number {
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center; }
+            .container .ProfileHeader .UserDetails .UserData .DataBlock .number p {
+              font-size: 22px;
+              letter-spacing: 2px; }
+            .container .ProfileHeader .UserDetails .UserData .DataBlock .number span {
+              opacity: .5;
+              font-size: 12px;
+              margin-top: -8px; }
+        .container .ProfileHeader .UserDetails .UserData .buttonProfile {
+          width: 100%;
+          display: flex;
+          margin-top: 8px;
+          justify-content: space-between; }
+          .container .ProfileHeader .UserDetails .UserData .buttonProfile a {
+            width: 80%; }
+            .container .ProfileHeader .UserDetails .UserData .buttonProfile a .btn-direct {
+              width: 100%;
+              display: flex;
+              height: 40px;
+              border-radius: 5px;
+              font-family: 'Poppins';
+              border: 1px solid #7c37a6;
+              background: transparent;
+              text-align: center;
+              font-size: 14px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #7c37a6;
+              margin-left: 10px; }
+          .container .ProfileHeader .UserDetails .UserData .buttonProfile .add {
+            display: flex;
+            width: 40px;
+            height: 40px;
+            background: #7C37A6;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            color: #FFF; }
+            .container .ProfileHeader .UserDetails .UserData .buttonProfile .add img {
+              width: 20px;
+              height: auto; }
+    .container .ProfileHeader .UserBio {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px; }
+      .container .ProfileHeader .UserBio .NameUser {
+        display: flex;
+        width: 100%;
+        flex-direction: column; }
+        .container .ProfileHeader .UserBio .NameUser h1 {
+          font-size: 22px; }
+        .container .ProfileHeader .UserBio .NameUser span {
+          margin-top: -10px;
+          opacity: 0.5; }
+      .container .ProfileHeader .UserBio .biograph {
+        width: 100%;
+        margin-top: 5px; }
+        .container .ProfileHeader .UserBio .biograph p {
+          font-size: 14px; }
+      .container .ProfileHeader .UserBio .UserStories {
+        width: 100%;
+        display: flex;
+        margin-top: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-top: 1px solid #eeeeee;
+        border-bottom: 1px solid #eeeeee; }
+        .container .ProfileHeader .UserBio .UserStories .storieblock {
+          width: 50px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-right: 15px; }
+          .container .ProfileHeader .UserBio .UserStories .storieblock .storie {
+            width: 50px;
+            height: 50px;
+            background: #7c37a6;
+            border-radius: 50%;
+            overflow: hidden; }
+            .container .ProfileHeader .UserBio .UserStories .storieblock .storie img {
+              max-width: 100%;
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+          .container .ProfileHeader .UserBio .UserStories .storieblock p {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 12px; }
+  .container .FeedProfile {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .container .FeedProfile .pagefeed {
+      width: 100%;
+      display: flex; }
+      .container .FeedProfile .pagefeed div {
+        flex: 1;
+        height: 40px;
+        margin: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .container .FeedProfile .pagefeed div .icon {
+          max-width: 20px;
+          height: 20px; }
+          .container .FeedProfile .pagefeed div .icon img {
+            max-width: 100%;
+            height: 100%; }
+    .container .FeedProfile .galleryfeed {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap; }
+      .container .FeedProfile .galleryfeed div {
+        display: flex;
+        background: #ddd;
+        margin: 1px;
+        overflow: hidden;
+        cursor: pointer;
+        min-width: 135px;
+        height: 135px;
+        min-height: 135px;
+        flex: 1; }
+        .container .FeedProfile .galleryfeed div:last-child {
+          max-width: 136px; }
+        .container .FeedProfile .galleryfeed div:hover img {
+          transform: scale(1.2); }
+        .container .FeedProfile .galleryfeed div:nth-child(1) {
+          flex: 2;
+          min-width: 203px;
+          height: 200px; }
+        .container .FeedProfile .galleryfeed div:nth-child(2) {
+          flex: 2;
+          min-width: 203px;
+          height: 200px; }
+        .container .FeedProfile .galleryfeed div img {
+          max-width: 100%;
+          height: auto;
+          object-fit: cover; }
+
+/*# sourceMappingURL=style.css.map */

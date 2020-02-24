@@ -1,0 +1,178 @@
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-scrolling: touch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .ChatNav {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  z-index: 5;
+}
+.container .ChatNav .menu {
+  flex: 1;
+  width: 60px;
+  height: 50px;
+  position: fixed;
+  top: 1px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .ChatNav .menu:after {
+  content: "";
+}
+.container .ChatNav .menu .bars {
+  display: flex;
+  flex-direction: column;
+}
+.container .ChatNav .menu .bars img {
+  max-width: 20px;
+  height: auto;
+  width: 100%;
+}
+.container .HeaderChat {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 60px 0px 25px 0px;
+}
+.container .HeaderChat h1 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #7c37a6;
+}
+.container .HeaderChat input {
+  width: 90%;
+  background: #F1F3F7;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.container .UserStories {
+  width: 100%;
+  display: flex;
+  margin-top: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eeeeee;
+}
+.container .UserStories .storieblock {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+}
+.container .UserStories .storieblock:first-child {
+  margin-left: 20px;
+}
+.container .UserStories .storieblock .storie {
+  width: 50px;
+  height: 50px;
+  background: #7c37a6;
+  border-radius: 50%;
+}
+.container .UserStories .storieblock p {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.container .TimeLineChat {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.container .TimeLineChat .chat-block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px 0px;
+  border-bottom: 1px solid #eeeeee;
+}
+.container .TimeLineChat .chat-block .user-photo {
+  width: 15%;
+}
+.container .TimeLineChat .chat-block .user-photo .photo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #7c37a6;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+.container .TimeLineChat .chat-block .user-photo .photo img {
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.container .TimeLineChat .chat-block .chat-preview {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.container .TimeLineChat .chat-block .chat-preview .name {
+  display: flex;
+  align-items: center;
+}
+.container .TimeLineChat .chat-block .chat-preview .name .chat-statusOn {
+  width: 10px;
+  height: 10px;
+  background: #30be00;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.container .TimeLineChat .chat-block .chat-preview .name .chat-statusOff {
+  width: 8px;
+  height: 8px;
+  border: 2px solid #30be00;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.container .TimeLineChat .chat-block .chat-preview .name h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.container .TimeLineChat .chat-block .chat-preview .msg p {
+  font-size: 12px;
+  font-weight: normal;
+  opacity: 0.5;
+}
+.container .TimeLineChat .chat-block .chat-notification {
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container .TimeLineChat .chat-block .chat-notification span {
+  color: #eeeeee;
+  font-size: 12px;
+  font-weight: normal;
+  background: #7c37a6;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

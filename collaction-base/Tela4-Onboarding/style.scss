@@ -1,0 +1,113 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper {
+    width: 90%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    .floatHeader {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      justify-content: space-between;
+      border-top: 1px solid #eee;
+      a, span {
+        font-weight: normal;
+        margin-right: 6%;
+        margin-left: 6%;
+        font-size: 14px;
+        color: #7c37a6;
+        &:first-child {
+          opacity: 0.5;
+        }
+        &:last-child {
+          opacity: 1;
+        }
+      }
+    }
+
+    .content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+
+      .IcongPage {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        animation: FadeIn ease-in-out 680ms forwards;
+
+
+        img {
+          max-width: 50%;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .title-boarding {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        opacity: 0;
+        animation: FadeIn ease-in-out 680ms forwards;
+
+        h1 {
+          font-weight: bold;
+          font-size: 20px;
+          text-align: center;
+          color: #7c37a6;
+        }
+        p {
+          color: #232323;
+          opacity: 0.5;
+          font-size: 14px;
+          margin-top: 10px;
+          text-align: center;
+        }
+      }
+
+      .steps {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 50px 0px 0px 0px;
+
+        div {
+          width: 50px;
+          height: 5px;
+          background: #7C37A6;
+          border-radius: 50px;
+
+          &:nth-child(1) {
+            opacity: .5;
+          }
+          &:nth-child(2) {
+            opacity: 1;
+          }
+          &:nth-child(3) {
+            opacity: .5;
+          }
+        }
+      }
+    }
+  }
+}

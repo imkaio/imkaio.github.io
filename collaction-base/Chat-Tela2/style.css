@@ -1,0 +1,203 @@
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-scrolling: touch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .HeaderMessenger {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  margin-bottom: 80px;
+  z-index: 10;
+  background: #fff;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+}
+.container .HeaderMessenger .iconBack {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .HeaderMessenger .iconBack img {
+  max-width: 20px;
+}
+.container .HeaderMessenger .messenger-actions {
+  flex: 1;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .HeaderMessenger .messenger-actions .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .HeaderMessenger .messenger-actions .icon img {
+  max-width: 70%;
+  height: auto;
+}
+.container .HeaderMessenger .chat-with {
+  width: 70%;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+}
+.container .HeaderMessenger .chat-with .friend-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.container .HeaderMessenger .chat-with .friend-photo img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.container .HeaderMessenger .chat-with h1 {
+  font-size: 16px;
+  margin-left: 8px;
+}
+.container .HeaderMessenger h1 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #7c37a6;
+}
+.container .HeaderMessenger input {
+  width: 90%;
+  background: #F1F3F7;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  margin-top: 5px;
+  font-size: 12px;
+}
+.container .TimeLineMessenger {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  background: red;
+  flex-direction: column;
+  margin-top: 10vh;
+  overflow-y: auto;
+}
+.container .TimeLineMessenger .messenger-mgs {
+  height: 82vh;
+  background: #fff;
+  padding-bottom: 85px;
+  overflow: scroll;
+}
+.container .TimeLineMessenger .messenger-mgs .friend-msg {
+  width: 95%;
+  display: flex;
+  margin: 15px 0px 15px 10px;
+  justify-content: flex-start;
+}
+.container .TimeLineMessenger .messenger-mgs .friend-msg .text-box {
+  width: fit-content;
+  max-width: 80%;
+  background: rgba(124, 55, 166, 0.31);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.container .TimeLineMessenger .messenger-mgs .friend-msg .text-box img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.container .TimeLineMessenger .messenger-mgs .friend-msg .text-box p {
+  color: #232323;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 15px;
+}
+.container .TimeLineMessenger .messenger-mgs .your-msg {
+  width: 95%;
+  display: flex;
+  margin: 5px 0px 5px 10px;
+  justify-content: flex-end;
+}
+.container .TimeLineMessenger .messenger-mgs .your-msg .text-box {
+  width: fit-content;
+  max-width: 80%;
+  background: #7c37a6;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.container .TimeLineMessenger .messenger-mgs .your-msg .text-box img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.container .TimeLineMessenger .messenger-mgs .your-msg .text-box p {
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 15px;
+}
+.container .TimeLineMessenger .chat-tools {
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 4px 7px 75px rgba(0, 0, 0, 0.33);
+  display: flex;
+}
+.container .TimeLineMessenger .chat-tools .icon-tool {
+  max-width: 50px;
+  height: 70px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .TimeLineMessenger .chat-tools .icon-tool .voice, .container .TimeLineMessenger .chat-tools .icon-tool .more {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .TimeLineMessenger .chat-tools .icon-tool .voice img, .container .TimeLineMessenger .chat-tools .icon-tool .more img {
+  max-width: 70%;
+  height: auto;
+}
+.container .TimeLineMessenger .chat-tools .text-input {
+  max-width: 100%;
+  height: 70px;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .TimeLineMessenger .chat-tools .text-input input {
+  width: 85%;
+  height: 35px;
+  padding: 0px 15px;
+  border-radius: 50px;
+  border: 1px solid rgba(124, 55, 166, 0.31);
+  font-size: 14px;
+  font-family: "Poppins";
+}
+
+/*# sourceMappingURL=style.css.map */

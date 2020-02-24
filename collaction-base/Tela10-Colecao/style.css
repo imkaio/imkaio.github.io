@@ -1,0 +1,259 @@
+@charset "UTF-8";
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-scrolling: touch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .FeedHeader {
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #eeeeee;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  z-index: 5;
+}
+.container .FeedHeader .menu {
+  flex: 1;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .FeedHeader .menu:after {
+  content: "";
+}
+.container .FeedHeader .menu .bars {
+  display: flex;
+  flex-direction: column;
+}
+.container .FeedHeader .menu .bars img {
+  max-width: 20px;
+  height: auto;
+  width: 100%;
+}
+.container .FeedHeader .menu-right {
+  flex: 1;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .FeedHeader .menu-right:after {
+  content: "";
+}
+.container .FeedHeader .menu-right .bars {
+  display: flex;
+  flex-direction: column;
+}
+.container .FeedHeader .menu-right .bars img {
+  max-width: 20px;
+  height: auto;
+  width: 100%;
+}
+.container .FeedHeader .logo {
+  flex: 2;
+  display: flex;
+}
+.container .FeedHeader .logo img {
+  max-width: 100px;
+  height: auto;
+  padding: 0;
+  margin: 10px 0px 0px 0px;
+}
+.container .FeedHeader .profilename {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4A4A4A;
+}
+.container .ProfileHeader {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: 100%;
+  margin-top: 90px;
+  margin-bottom: 25px;
+  transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 5320ms;
+}
+.container .ProfileHeader .UserDetails {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.container .ProfileHeader .UserDetails .UserPhoto {
+  width: 20%;
+  flex: 1;
+  display: flex;
+}
+.container .ProfileHeader .UserDetails .UserPhoto .div {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #7c37a6;
+}
+.container .ProfileHeader .UserDetails .UserData {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  width: 75%;
+}
+.container .ProfileHeader .UserDetails .UserData .DataBlock {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.container .ProfileHeader .UserDetails .UserData .DataBlock .number {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.container .ProfileHeader .UserDetails .UserData .DataBlock .number p {
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+.container .ProfileHeader .UserDetails .UserData .DataBlock .number span {
+  opacity: 0￿ 0.5;
+  font-size: 12px;
+  margin-top: -8px;
+}
+.container .ProfileHeader .UserDetails .UserData .buttonProfile {
+  width: 100%;
+  display: flex;
+  margin-top: 8px;
+  justify-content: space-between;
+}
+.container .ProfileHeader .UserDetails .UserData .buttonProfile .btn-direct {
+  width: 80%;
+  display: flex;
+  height: 40px;
+  border-radius: 5px;
+  font-family: "Poppins";
+  border: 1px solid #7c37a6;
+  background: transparent;
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7c37a6;
+  margin-left: 10px;
+}
+.container .ProfileHeader .UserDetails .UserData .buttonProfile .add {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background: #7C37A6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: #FFF;
+}
+.container .ProfileHeader .UserDetails .UserData .buttonProfile .add img {
+  width: 20px;
+  height: auto;
+}
+.container .TimeLineColecoes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .TimeLineColecoes .colecao-block {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+}
+.container .TimeLineColecoes .colecao-block .images-block {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .TimeLineColecoes .colecao-block .images-block div {
+  display: flex;
+  background: #ddd;
+  margin: 1px;
+  overflow: hidden;
+  cursor: pointer;
+  min-width: 135px;
+  max-width: 135px;
+  height: 135px;
+  min-height: 135px;
+  flex: 1;
+}
+.container .TimeLineColecoes .colecao-block .images-block div:hover img {
+  transform: scale(1.2);
+}
+.container .TimeLineColecoes .colecao-block .images-block div:nth-child(1) {
+  flex: 2;
+  min-width: 203px;
+  height: 200px;
+}
+.container .TimeLineColecoes .colecao-block .images-block div:nth-child(2) {
+  flex: 2;
+  min-width: 203px;
+  height: 200px;
+}
+.container .TimeLineColecoes .colecao-block .images-block div img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.container .TimeLineColecoes .colecao-block .colecao-bar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  border-bottom: 1px solid #eeeeee;
+}
+.container .TimeLineColecoes .colecao-block .colecao-bar .colection-name {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.container .TimeLineColecoes .colecao-block .colecao-bar .colection-name img {
+  max-width: 20px;
+  height: auto;
+  width: 100%;
+  margin-right: 10px;
+}
+.container .TimeLineColecoes .colecao-block .colecao-bar .colection-name p {
+  color: #7c37a6;
+  font-weight: normal;
+  font-size: 14px;
+}
+.container .TimeLineColecoes .colecao-block .colecao-bar .icons-actions {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+.container .TimeLineColecoes .colecao-block .colecao-bar .icons-actions .icon {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .TimeLineColecoes .colecao-block .colecao-bar .icons-actions .icon img {
+  max-width: 20px;
+  height: auto;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

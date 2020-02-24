@@ -1,0 +1,8 @@
+<svg id="Icon_Mic" data-name="Icon Mic" xmlns="http://www.w3.org/2000/svg" width="68.97" height="68.97" viewBox="0 0 68.97 68.97">
+  <path id="Bounds" d="M0,0H68.97V68.97H0V0Z" fill="none" opacity="0"/>
+  <g id="Group" transform="translate(14.369 5.748)">
+    <path id="Shape" d="M8.621,0A8.621,8.621,0,0,0,0,8.621V25.864a8.621,8.621,0,0,0,17.243,0V8.621A8.621,8.621,0,0,0,8.621,0Z" transform="translate(11.495 0)" fill="none" stroke="#ccc" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Shape-2" data-name="Shape" d="M40.233,0A20.116,20.116,0,0,1,20.116,20.116,20.116,20.116,0,0,1,0,0" transform="translate(0 25.864)" fill="none" stroke="#ccc" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+    <path id="Shape-3" data-name="Shape" d="M0,0V11.5" transform="translate(20.116 45.98)" fill="none" stroke="#ccc" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4"/>
+  </g>
+</svg>

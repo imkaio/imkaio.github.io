@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(10deg, #fce545 0%, #fff8c3 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation: LogoAni cubic-bezier(0.68, -0.55, 0.27, 01.55) 1560ms forwards;
+
+    img {
+      max-width: 50%;
+      height: auto;
+    }
+    @keyframes LogoAni {
+      0% {
+        opacity: 0;
+        transform: scale(0);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+}
