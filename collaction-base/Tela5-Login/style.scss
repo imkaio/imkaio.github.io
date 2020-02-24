@@ -29,12 +29,8 @@
         margin-left: 6%;
         font-size: 14px;
         color: #7c37a6;
-        &:first-child {
-          opacity: 0.5;
-        }
-        &:last-child {
-          opacity: 1;
-        }
+        font-family: 'nunitobold';
+
       }
     }
 
@@ -64,6 +60,8 @@
           opacity: 0.5;
           text-align: center;
           margin-top: 15px;
+          font-family: 'nunitoregular';
+
         }
       }
 
@@ -121,6 +119,8 @@
           bottom: -40px;
           text-align: center;
           width: 100%;
+          font-family: 'nunitoregular';
+
         }
 
         .callSignUp {
@@ -139,6 +139,8 @@
             align-items: center;
             width: 100%;
             justify-content: center;
+            font-family: 'nunitoregular';
+
             &:before {
               content: '';
               width: 100px;

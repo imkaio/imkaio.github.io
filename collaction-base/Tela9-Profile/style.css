@@ -66,7 +66,8 @@
     .container .FeedHeader .profilename {
       font-size: 16px;
       font-weight: bold;
-      color: #4A4A4A; }
+      color: #7c37a6;
+      font-family: 'nunitobold'; }
   .container .ProfileHeader {
     display: flex;
     flex-direction: column;
@@ -79,7 +80,7 @@
       display: flex;
       align-items: center; }
       .container .ProfileHeader .UserDetails .UserPhoto {
-        width: 20%;
+        width: 25%;
         flex: 1;
         display: flex; }
         .container .ProfileHeader .UserDetails .UserPhoto .div {
@@ -110,18 +111,20 @@
             align-items: center; }
             .container .ProfileHeader .UserDetails .UserData .DataBlock .number p {
               font-size: 22px;
-              letter-spacing: 2px; }
+              letter-spacing: -2px;
+              font-family: 'nunitobold'; }
             .container .ProfileHeader .UserDetails .UserData .DataBlock .number span {
               opacity: .5;
               font-size: 12px;
-              margin-top: -8px; }
+              margin-top: -8px;
+              font-family: 'nunitoregular'; }
         .container .ProfileHeader .UserDetails .UserData .buttonProfile {
           width: 100%;
           display: flex;
           margin-top: 8px;
           justify-content: space-between; }
           .container .ProfileHeader .UserDetails .UserData .buttonProfile a {
-            width: 80%; }
+            width: 70%; }
             .container .ProfileHeader .UserDetails .UserData .buttonProfile a .btn-direct {
               width: 100%;
               display: flex;
@@ -161,15 +164,18 @@
         width: 100%;
         flex-direction: column; }
         .container .ProfileHeader .UserBio .NameUser h1 {
-          font-size: 22px; }
+          font-size: 22px;
+          font-family: 'nunitobold'; }
         .container .ProfileHeader .UserBio .NameUser span {
-          margin-top: -10px;
-          opacity: 0.5; }
+          margin-top: -5px;
+          opacity: 0.5;
+          font-family: 'nunitoregular'; }
       .container .ProfileHeader .UserBio .biograph {
         width: 100%;
-        margin-top: 5px; }
+        margin-top: 8px; }
         .container .ProfileHeader .UserBio .biograph p {
-          font-size: 14px; }
+          font-size: 14px;
+          font-family: 'nunitoregular'; }
       .container .ProfileHeader .UserBio .UserStories {
         width: 100%;
         display: flex;
@@ -198,7 +204,8 @@
           .container .ProfileHeader .UserBio .UserStories .storieblock p {
             text-align: center;
             margin-top: 5px;
-            font-size: 12px; }
+            font-size: 12px;
+            font-family: 'nunitoregular'; }
   .container .FeedProfile {
     width: 100%;
     display: flex;
