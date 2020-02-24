@@ -102,12 +102,14 @@
           background: #7c37a6;
           color: #eeeeee;
           margin-bottom: 5px ;
+          text-transform: uppercase;
         }
 
         .btn-criar {
           background: transparent;
           border: 2px solid #7c37a6;
           color: #7c37a6;
+          text-transform: uppercase;
         }
 
         p {
@@ -165,15 +167,37 @@
             width: 100%;
             display: flex;
             justify-content: center;
-            div {
+            .fb-icon, .twitter-icon, .gmail-icon {
               width: 50px;
               height: 50px;
-              border: 2px solid #ddd;
               border-radius: 50%;
               display: flex;
               justify-content: center;
               align-items: center;
               margin: 5px;
+              box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.16);
+
+              img {
+                max-width: 20px;
+                width: 100%;
+                height: auto;
+              }
+            }
+
+            .fb-icon {
+              background: #3B5998;
+              border: none;
+
+              img {
+                max-width: 20px!important;
+                width: 25px!important;
+                height: 20px!important;
+              }
+            }
+
+            .twitter-icon {
+              background: #55ACEE;
+              border: none;
             }
           }
 
