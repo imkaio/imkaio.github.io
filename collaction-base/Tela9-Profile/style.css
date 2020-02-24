@@ -167,8 +167,8 @@
           font-size: 22px;
           font-family: 'nunitobold'; }
         .container .ProfileHeader .UserBio .NameUser span {
-          margin-top: -2px;
-          opacity: 0.5;
+          margin-top: 5px;
+          opacity: .5;
           font-family: 'nunitoregular'; }
       .container .ProfileHeader .UserBio .biograph {
         width: 100%;
@@ -183,7 +183,8 @@
         padding-top: 15px;
         padding-bottom: 15px;
         border-top: 1px solid #eeeeee;
-        border-bottom: 1px solid #eeeeee; }
+        border-bottom: 1px solid #eeeeee;
+        overflow: auto; }
         .container .ProfileHeader .UserBio .UserStories .storieblock {
           width: 50px;
           display: flex;
