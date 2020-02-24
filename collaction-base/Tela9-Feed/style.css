@@ -80,14 +80,43 @@
         display: flex;
         justify-content: center;
         align-items: center; }
-        .container .Timeline .post .media .video-overlay {
-          width: 100%;
-          height: 100%;
-          background: rgba(0, 0, 0, 0.5);
+        .container .Timeline .post .media .type-of-post {
+          width: 20px;
+          height: 20px;
+          border-radius: 5px;
+          position: absolute;
+          top: 10px;
+          left: 10px;
           display: flex;
           justify-content: center;
-          align-items: center;
-          position: absolute; }
+          align-items: center; }
+          .container .Timeline .post .media .type-of-post img {
+            width: 10px;
+            height: auto; }
+        .container .Timeline .post .media .gallery_line {
+          width: 100%;
+          height: 20px;
+          position: absolute;
+          bottom: 0;
+          display: flex;
+          justify-content: center; }
+          .container .Timeline .post .media .gallery_line div {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            margin-left: 5px; }
+        .container .Timeline .post .media .overlay_video {
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.4);
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .container .Timeline .post .media .overlay_video img {
+            width: 25px;
+            height: auto; }
         .container .Timeline .post .media img, .container .Timeline .post .media video {
           max-width: 100%;
           height: auto;

@@ -108,15 +108,55 @@
         justify-content: center;
         align-items: center;
 
-        .video-overlay {
-          width: 100%;
-          height: 100%;
-          background: rgba(0,0,0,.5);
+        .type-of-post {
+          width: 20px;
+          height: 20px;
+          border-radius: 5px;
+          position: absolute;
+          top: 10px;
+          left: 10px;
           display: flex;
           justify-content: center;
           align-items: center;
-          position: absolute;
+
+          img {
+            width: 10px;
+            height: auto;
+          }
         }
+
+        .gallery_line {
+          width: 100%;
+          height: 20px;
+          position: absolute;
+          bottom: 0;
+          display: flex;
+          justify-content: center;
+
+          div {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            margin-left: 5px;
+          }
+        }
+
+        .overlay_video {
+          width: 100%;
+          height: 100%;
+          background: rgba(0,0,0,.4);
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 25px;
+            height: auto;
+          }
+        }
+
         img, video {
           max-width: 100%;
           height: auto;
