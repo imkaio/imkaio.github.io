@@ -24,6 +24,42 @@ input, button, textarea {
     }
 }
 
+@keyframes ballongContent {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes ballong {
+    0% {
+        transform: translateY(18px);
+        opacity: 1;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+    50% {
+        transform: translateY(-18px);
+        opacity: 1;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+        width: 180px;
+        height: 90px;
+        border-radius: 5px;
+    }
+}
+
+
 
 
 @font-face {
