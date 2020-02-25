@@ -121,9 +121,6 @@
               font-size: 12px;
               margin-top: 0px;
               font-family: 'nunitoregular'; }
-              @media screen and (max-width: 414px) {
-                .container .ProfileHeader .UserDetails .UserData .DataBlock .number span {
-                  margin-top: -52x; } }
         .container .ProfileHeader .UserDetails .UserData .buttonProfile {
           width: 100%;
           display: flex;
@@ -176,9 +173,6 @@
           margin-top: 0px;
           opacity: .5;
           font-family: 'nunitoregular'; }
-          @media screen and (max-width: 414px) {
-            .container .ProfileHeader .UserBio .NameUser span {
-              margin-top: -2px; } }
       .container .ProfileHeader .UserBio .biograph {
         width: 100%;
         margin-top: 10px; }
