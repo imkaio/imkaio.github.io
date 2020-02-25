@@ -317,5 +317,14 @@
         }
     }
 </script>
+
+<script>
+    function changeCss() {
+        var bodyElement = document.querySelector("body");
+        var navElement = document.querySelector(".FeedHeader");
+        this.scrollY > 10 ? navElement.style.height = '50px' : navElement.style.height = '70px';
+    }
+    window.addEventListener("scroll", changeCss , false);
+</script>
 </body>
 </html>
