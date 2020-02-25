@@ -83,4 +83,114 @@
 
     }
   }
+
+  .edicao-foto {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: pink;
+    position: absolute;
+    bottom: 0;
+
+    .preview-foto {
+      width: 100%;
+      height: inherit;
+
+      img {
+        max-width: 100%;
+        height: inherit;
+        object-fit: cover;
+      }
+    }
+
+
+
+    .edicao-tools {
+      width: 100%;
+      min-height: 50px;
+      height: fit-content;
+      padding: 10px 0px 0px;
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      bottom: 0;
+      background: linear-gradient(rgba(38, 38, 40, 0) 0%, #262628 100%);
+
+
+      .filtros {
+        width: 95%;
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        position: relative;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        .filtro {
+          max-width: 80px;
+          min-width: 75px;
+          flex: 1;
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-left: 15px;
+          &:first-child {
+            margin-left: 0px;
+          }
+
+          .preview-filtro-neutro {
+            width: 50px;
+            height: 50px;
+            background: transparent;
+            border: 3px solid #fff;
+            border-radius: 50%;
+          }
+
+          .preview-filtro {
+            width: 50px;
+            height: 50px;
+            background: pink;
+            border-radius: 50%;
+          }
+          p {
+            font-family: 'Montserrat Regular';
+            font-size: 11px;
+            opacity: 0.6;
+            color: #FFF;
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .tab-edicao {
+        width: 95%;
+        height: 50px;
+        border-top: 1px solid #5c5c5c;
+        display: flex;
+        .tab {
+          flex: 1;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:last-child {
+            opacity: 0.5;
+          }
+
+          p {
+            font-size: 12px;
+            font-family: 'Montserrat SemiBold';
+            letter-spacing: 2px;
+            color: #FFF;
+          }
+        }
+      }
+    }
+  }
 }
