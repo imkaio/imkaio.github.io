@@ -36,10 +36,34 @@
         </div>
 
         <div class="edicao-tools">
-
-
-
-            <div class="filtros">
+            <div class="edicao" id="edicao">
+                <div class="edit">
+                    <div class="icon-edit">
+                        <img src="../assets/Icons/editar-brilho.png" alt="">
+                    </div>
+                </div>
+                <div class="edit">
+                    <div class="icon-edit">
+                        <img src="../assets/Icons/editar-luz.png" alt="">
+                    </div>
+                </div>
+                <div class="edit">
+                    <div class="icon-edit">
+                        <img src="../assets/Icons/editar-contraste.png" alt="">
+                    </div>
+                </div>
+                <div class="edit">
+                    <div class="icon-edit">
+                        <img src="../assets/Icons/esitar-esmaecer.png" alt="">
+                    </div>
+                </div>
+                <div class="edit">
+                    <div class="icon-edit">
+                        <img src="../assets/Icons/moreimages.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="filtros" id="filtros">
                 <div class="filtro">
                     <div class="preview-filtro-neutro"></div>
                     <p>Nenhum</p>
@@ -91,19 +115,59 @@
             </div>
 
             <div class="tab-edicao">
-                <div class="tab">
+                <div class="tab" id="tabFiltro" onclick="filtroFunction()">
                     <p>FILTROS</p>
                 </div>
-                <div class="tab">
-                    <p>EFEITOS</p>
+                <div class="tab" id="tabEditar" onclick="edicaoFunction()">
+                    <p>EDITAR</p>
                 </div>
             </div>
         </div>
     </div>
-
-
-
 </div>
+
+<script>
+    function edicaoFunction() {
+        const x = document.getElementById("filtros");
+        const y = document.getElementById("edicao");
+        const textFiltro = document.getElementById("tabFiltro");
+        const textEditar = document.getElementById("tabEditar");
+        if (y.style.display === "none") {
+            y.style.display = "flex";
+            x.style.display = "none";
+            textFiltro.style.opacity = "0.5";
+            textEditar.style.opacity = "1";
+
+        } else {
+            y.style.display = "flex";
+            x.style.display = "none";
+            textEditar.style.opacity = "1";
+            textFiltro.style.opacity = "0.5";
+
+        }
+    }
+    function filtroFunction() {
+        const x = document.getElementById("filtros");
+        const y = document.getElementById("edicao");
+        const textFiltro = document.getElementById("tabFiltro");
+        const textEditar = document.getElementById("tabEditar");
+        if (x.style.display === "none") {
+            x.style.display = "flex";
+            y.style.display = "none";
+            textEditar.style.opacity = "0.5";
+            textFiltro.style.opacity = "1";
+
+
+        } else {
+            x.style.display = "flex";
+            y.style.display = "none";
+            textFiltro.style.opacity = "1";
+            textEditar.style.opacity = "0.5";
+
+
+        }
+    }
+</script>
 
 </body>
 </html>
