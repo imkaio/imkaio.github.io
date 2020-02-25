@@ -1,0 +1,163 @@
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-scrolling: touch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .container .FeedHeader {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #eeeeee;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    z-index: 5; }
+    .container .FeedHeader .menu {
+      flex: 1;
+      width: 70px;
+      height: 70px;
+      position: fixed;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .container .FeedHeader .menu:after {
+        content: ''; }
+      .container .FeedHeader .menu .bars {
+        display: flex;
+        flex-direction: column; }
+        .container .FeedHeader .menu .bars img {
+          max-width: 20px;
+          height: auto;
+          width: 100%; }
+    .container .FeedHeader .menu-right {
+      flex: 1;
+      width: 70px;
+      height: 70px;
+      position: fixed;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .container .FeedHeader .menu-right:after {
+        content: ''; }
+      .container .FeedHeader .menu-right .bars {
+        display: flex;
+        flex-direction: column; }
+        .container .FeedHeader .menu-right .bars img {
+          max-width: 20px;
+          height: auto;
+          width: 100%; }
+    .container .FeedHeader .logo {
+      flex: 2;
+      display: flex; }
+      .container .FeedHeader .logo img {
+        max-width: 100px;
+        height: auto;
+        padding: 0;
+        margin: 10px 0px 0px 0px; }
+    .container .FeedHeader .profilename {
+      font-size: 16px;
+      color: #232323;
+      font-family: 'nunitoregular'; }
+  .container .edicao-foto {
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: pink;
+    position: absolute;
+    bottom: 0; }
+    .container .edicao-foto .preview-foto {
+      width: 100%;
+      height: inherit; }
+      .container .edicao-foto .preview-foto img {
+        max-width: 100%;
+        height: inherit;
+        object-fit: cover; }
+    .container .edicao-foto .edicao-tools {
+      width: 100%;
+      min-height: 50px;
+      height: fit-content;
+      padding: 10px 0px 0px 0px;
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      bottom: 0;
+      background: linear-gradient(rgba(38, 38, 40, 0) 0%, #262628 100%); }
+      .container .edicao-foto .edicao-tools .filtros {
+        width: 100%;
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        position: relative;
+        margin-left: 15px; }
+        .container .edicao-foto .edicao-tools .filtros::-webkit-scrollbar {
+          display: none; }
+        .container .edicao-foto .edicao-tools .filtros .filtro {
+          max-width: 80px;
+          min-width: 75px;
+          flex: 1;
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-left: 15px; }
+          .container .edicao-foto .edicao-tools .filtros .filtro:first-child {
+            margin-left: 0px; }
+          .container .edicao-foto .edicao-tools .filtros .filtro:last-child {
+            padding-right: 20px; }
+          .container .edicao-foto .edicao-tools .filtros .filtro .active-filtro {
+            width: 48px !important;
+            height: 48px !important;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid #FFF;
+            border-radius: 50%; }
+          .container .edicao-foto .edicao-tools .filtros .filtro .preview-filtro-neutro {
+            width: 50px;
+            height: 50px;
+            background: transparent;
+            border: 3px solid #fff;
+            border-radius: 50%; }
+          .container .edicao-foto .edicao-tools .filtros .filtro .preview-filtro {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%; }
+          .container .edicao-foto .edicao-tools .filtros .filtro p {
+            font-family: 'Montserrat Regular';
+            font-size: 11px;
+            opacity: 0.6;
+            color: #FFF;
+            margin-top: 10px; }
+      .container .edicao-foto .edicao-tools .tab-edicao {
+        width: 95%;
+        height: 50px;
+        border-top: 1px solid #5c5c5c;
+        display: flex; }
+        .container .edicao-foto .edicao-tools .tab-edicao .tab {
+          flex: 1;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .container .edicao-foto .edicao-tools .tab-edicao .tab:last-child {
+            opacity: 0.5; }
+          .container .edicao-foto .edicao-tools .tab-edicao .tab p {
+            font-size: 12px;
+            font-family: 'Montserrat SemiBold';
+            letter-spacing: 2px;
+            color: #FFF; }
+
+/*# sourceMappingURL=style.css.map */
