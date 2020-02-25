@@ -101,7 +101,7 @@
     width: 95%;
     max-width: 100%;
     margin-top: 90px;
-    transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 5320ms;
+    transition: ease-in-out 380ms;
 
     .UserDetails {
       width: 100%;
@@ -163,7 +163,7 @@
               font-family: 'nunitoregular';
 
               @media screen and (max-width: 414px) {
-                margin-top:-5px;
+                margin-top:-52x;
               }
 
             }
@@ -237,7 +237,7 @@
           opacity: .5;
           font-family: 'nunitoregular';
           @media screen and (max-width: 414px) {
-            margin-top:-5px;
+            margin-top:-2px;
           }
         }
       }
@@ -327,7 +327,7 @@
       flex-wrap: wrap;
 
 
-      div {
+      .block-image {
         display: flex;
         background: #ddd;
         margin: 1px;
@@ -338,6 +338,8 @@
         width: unset;
         min-width: unset;
         max-width: unset;
+        position: relative;
+        -webkit-overflow-scrolling: touch;
 
         &:last-child {
           max-width: 136px;
@@ -361,6 +363,23 @@
 
           height: 200px;
 
+        }
+
+        .type-of-content {
+          width: 40px!important;
+          max-width: 40px!important;
+          height: 40px!important;
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 25px;
+            height: auto;
+          }
         }
 
 

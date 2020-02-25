@@ -113,6 +113,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow-x: scroll;
 
         .type-of-post {
           width: 20px;
@@ -138,6 +139,7 @@
           bottom: 0;
           display: flex;
           justify-content: center;
+          overflow: hidden;
 
           div {
             width: 5px;
@@ -166,7 +168,6 @@
         img, video {
           max-width: 100%;
           height: auto;
-          overflow: hidden;
           object-fit: cover;
           object-position: center;
         }

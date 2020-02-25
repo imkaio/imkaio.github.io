@@ -80,7 +80,8 @@
         position: relative;
         display: flex;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        overflow-x: scroll; }
         .container .Timeline .post .media .type-of-post {
           width: 20px;
           height: 20px;
@@ -100,7 +101,8 @@
           position: absolute;
           bottom: 0;
           display: flex;
-          justify-content: center; }
+          justify-content: center;
+          overflow: hidden; }
           .container .Timeline .post .media .gallery_line div {
             width: 5px;
             height: 5px;
@@ -121,7 +123,6 @@
         .container .Timeline .post .media img, .container .Timeline .post .media video {
           max-width: 100%;
           height: auto;
-          overflow: hidden;
           object-fit: cover;
           object-position: center; }
       .container .Timeline .post .author {

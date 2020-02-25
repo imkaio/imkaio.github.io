@@ -73,7 +73,7 @@
     width: 95%;
     max-width: 100%;
     margin-top: 90px;
-    transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 5320ms; }
+    transition: ease-in-out 380ms; }
     .container .ProfileHeader .UserDetails {
       width: 100%;
       display: flex;
@@ -123,7 +123,7 @@
               font-family: 'nunitoregular'; }
               @media screen and (max-width: 414px) {
                 .container .ProfileHeader .UserDetails .UserData .DataBlock .number span {
-                  margin-top: -5px; } }
+                  margin-top: -52x; } }
         .container .ProfileHeader .UserDetails .UserData .buttonProfile {
           width: 100%;
           display: flex;
@@ -178,7 +178,7 @@
           font-family: 'nunitoregular'; }
           @media screen and (max-width: 414px) {
             .container .ProfileHeader .UserBio .NameUser span {
-              margin-top: -5px; } }
+              margin-top: -2px; } }
       .container .ProfileHeader .UserBio .biograph {
         width: 100%;
         margin-top: 10px; }
@@ -240,7 +240,7 @@
       width: 100%;
       display: flex;
       flex-wrap: wrap; }
-      .container .FeedProfile .galleryfeed div {
+      .container .FeedProfile .galleryfeed .block-image {
         display: flex;
         background: #ddd;
         margin: 1px;
@@ -250,20 +250,35 @@
         height: 150px;
         width: unset;
         min-width: unset;
-        max-width: unset; }
-        .container .FeedProfile .galleryfeed div:last-child {
+        max-width: unset;
+        position: relative;
+        -webkit-overflow-scrolling: touch; }
+        .container .FeedProfile .galleryfeed .block-image:last-child {
           max-width: 136px; }
-        .container .FeedProfile .galleryfeed div:hover img {
+        .container .FeedProfile .galleryfeed .block-image:hover img {
           transform: scale(1.2); }
-        .container .FeedProfile .galleryfeed div:nth-child(1) {
+        .container .FeedProfile .galleryfeed .block-image:nth-child(1) {
           flex: 1;
           min-width: 45%;
           height: 200px; }
-        .container .FeedProfile .galleryfeed div:nth-child(2) {
+        .container .FeedProfile .galleryfeed .block-image:nth-child(2) {
           flex: 1;
           min-width: 45%;
           height: 200px; }
-        .container .FeedProfile .galleryfeed div img {
+        .container .FeedProfile .galleryfeed .block-image .type-of-content {
+          width: 40px !important;
+          max-width: 40px !important;
+          height: 40px !important;
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .container .FeedProfile .galleryfeed .block-image .type-of-content img {
+            width: 25px;
+            height: auto; }
+        .container .FeedProfile .galleryfeed .block-image img {
           max-width: 100%;
           height: auto;
           object-fit: cover; }
