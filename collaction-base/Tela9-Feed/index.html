@@ -304,7 +304,7 @@
         </div>
     </div>
 
-    <div class="tooltip-lens">
+    <div class="tooltip-lens" id="too" onclick="Mudarestado()">
         <div class="ballon">
             <div class="wrapper-content">
                 <p>Vamos criar nosso primeiro video?</p>
@@ -357,6 +357,13 @@
         this.scrollY > 1 ? navElement.style.height = '50px' : navElement.style.height = '70px';
     }
     window.addEventListener("scroll", changeCss , false);
+</script>
+
+<script>
+    function Mudarestado()
+    {
+        document.getElementById('too').style.display = "none"; // ou "block"
+    }
 </script>
 </body>
 </html>
