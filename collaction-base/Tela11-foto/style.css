@@ -25,6 +25,9 @@
     justify-content: center;
     display: flex;
     align-items: center; }
+    .container .picture-action video {
+      width: 100%;
+      height: 100vh; }
     .container .picture-action a {
       width: unset; }
     .container .picture-action .action-top {
