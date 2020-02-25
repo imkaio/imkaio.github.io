@@ -226,7 +226,7 @@
         flex-direction: column;
         h1 {
           font-size: 22px;
-          font-family: 'nunitobold';
+          font-family: 'Montserrat Bold';
 
         }
         span {
@@ -369,11 +369,19 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          z-index: 2;
 
           img {
-            width: 25px;
+            width: 15px;
             height: auto;
           }
+        }
+
+        .overlay-profile {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background: linear-gradient(40deg, rgba(255, 255, 255, 0) 0%, rgba(250, 250, 250, 0.02) 65.18%, #000 102%);
         }
 
 

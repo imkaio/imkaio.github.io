@@ -119,7 +119,8 @@
           align-items: center; }
           .container .Timeline .post .media .overlay_video img {
             width: 25px;
-            height: auto; }
+            height: auto;
+            opacity: 0.6; }
         .container .Timeline .post .media img, .container .Timeline .post .media video {
           max-width: 100%;
           height: auto;
