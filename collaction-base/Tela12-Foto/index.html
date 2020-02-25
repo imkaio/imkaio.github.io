@@ -187,5 +187,26 @@
     }
 </script>
 
+<script>
+    function toggleItem(elem) {
+        for (var i = 0; i < elem.length; i++) {
+            elem[i].addEventListener("click", function(e) {
+                var current = this;
+                for (var i = 0; i < elem.length; i++) {
+                    if (current != elem[i]) {
+                        elem[i].classList.remove('active-filtro');
+                    } else if (current.classList.contains('active-filtro') === true) {
+                        current.classList.remove('active-filtro');
+                    } else {
+                        current.classList.add('active-filtro')
+                    }
+                }
+                e.preventDefault();
+            });
+        };
+    }
+    toggleItem(document.querySelectorAll('.preview-filtro'));
+</script>
+
 </body>
 </html>
