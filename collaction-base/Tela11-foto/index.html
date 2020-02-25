@@ -12,10 +12,8 @@
 
 <div class="container">
     <div class="picture">
-<!--        <img src="https://images.pexels.com/photos/3178818/pexels-photo-3178818.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">-->
-        <video autoplay="true" id="videoElement">
+        <img src="https://images.pexels.com/photos/3178818/pexels-photo-3178818.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
 
-        </video>
     </div>
     
     <div class="picture-action">
@@ -59,20 +57,6 @@
         </div>
     </div>
 </div>
-
-<script>
-    var video = document.querySelector("#videoElement");
-
-    if (navigator.mediaDevices.getUserMedia) {
-        navigator.mediaDevices.getUserMedia({ video: true })
-            .then(function (stream) {
-                video.srcObject = stream;
-            })
-            .catch(function (err0r) {
-                console.log("Something went wrong!");
-            });
-    }
-</script>
 
 </body>
 </html>

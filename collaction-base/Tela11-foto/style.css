@@ -7,9 +7,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column; }
-  @supports (-webkit-appearance: none) {
-    .os-android .container {
-      min-height: calc(100vh + 56px); } }
   .container .picture {
     width: 100%;
     height: inherit;

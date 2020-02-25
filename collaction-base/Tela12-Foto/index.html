@@ -32,7 +32,7 @@
 
     <div class="edicao-foto">
         <div class="preview-foto">
-            <img src="https://images.pexels.com/photos/3178818/pexels-photo-3178818.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+            <img id="apply-filter" src="https://images.pexels.com/photos/3178818/pexels-photo-3178818.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
         </div>
 
         <div class="edicao-tools">
@@ -64,25 +64,25 @@
                 </div>
             </div>
             <div class="filtros" id="filtros">
-                <div class="filtro">
+                <div class="filtro" onclick="myNoFilter()">
                     <div class="preview-filtro-neutro"></div>
                     <p>Nenhum</p>
                 </div>
-                <div class="filtro">
+                <div class="filtro" onclick="myFilterBw()">
                     <div class="preview-filtro"></div>
-                    <p>New York</p>
+                    <p>B&W</p>
                 </div>
-                <div class="filtro">
+                <div class="filtro" onclick="myFilterSepia()">
                     <div class="preview-filtro active-filtro"></div>
-                    <p>New York</p>
+                    <p>Sépia</p>
                 </div>
-                <div class="filtro">
+                <div class="filtro" onclick="myFilterAden()">
                     <div class="preview-filtro"></div>
-                    <p>New York</p>
+                    <p>Aden</p>
                 </div>
-                <div class="filtro">
+                <div class="filtro" onclick="myFilterLofi()">
                     <div class="preview-filtro"></div>
-                    <p>New York</p>
+                    <p>LoFi</p>
                 </div>
                 <div class="filtro">
                     <div class="preview-filtro"></div>
@@ -166,6 +166,24 @@
 
 
         }
+    }
+</script>
+
+<script>
+    function myNoFilter() {
+        document.getElementById("apply-filter").style.filter = "none";
+    }
+    function myFilterBw() {
+        document.getElementById("apply-filter").style.filter = "grayscale(100%)";
+    }
+    function myFilterSepia() {
+        document.getElementById("apply-filter").style.filter = "sepia(1) contrast(100%) hue-rotate(320deg)";
+    }
+    function myFilterAden() {
+        document.getElementById("apply-filter").style.filter = "contrast(90%) brightness(120%) saturate(85%) hue-rotate(20deg)";
+    }
+    function myFilterLofi() {
+        document.getElementById("apply-filter").style.filter = "contrast(150%) saturate(110%)";
     }
 </script>
 
