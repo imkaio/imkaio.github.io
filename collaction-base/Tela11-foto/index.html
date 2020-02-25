@@ -12,7 +12,7 @@
 
 <div class="container">
     <div class="picture">
-        <img src="https://images.pexels.com/photos/3178818/pexels-photo-3178818.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+        <canvas id='canvas' width='100' height='100'></canvas>
     </div>
     
     <div class="picture-action">
@@ -57,7 +57,33 @@
     </div>
 </div>
 
+<script>
+    var onFailSoHard = function(e)
+    {
+        console.log('failed',e);
+    }
 
+    window.URL = window.URL || window.webkitURL ;
+    navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia;
+
+    var video = document.querySelector('video');
+
+    if(navigator.getUserMedia)
+    {
+        navigator.getUserMedia({video: true},function(stream) {
+            video.src = window.URL.createObjectURL(stream);
+        },onFailSoHard);
+    }
+
+
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+    setInterval(function(){
+        ctx.drawImage(video,0,0);
+    }, 100);
+
+    }
+</script>
 
 </body>
 </html>
