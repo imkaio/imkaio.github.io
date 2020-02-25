@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 286.95 286.95">
+  <defs>
+    <filter id="Path" x="24.273" y="35.368" width="251.358" height="251.582" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="37.5" result="blur"/>
+      <feFlood flood-color="#2f1ed1" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path-2" x="1.34" y="40.282" width="255.081" height="244.657" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="37.5" result="blur-2"/>
+      <feFlood flood-color="#2f1ed1" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path-3" x="0" y="10.052" width="248.827" height="252.178" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="37.5" result="blur-3"/>
+      <feFlood flood-color="#2f1ed1" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path-4" x="38.123" y="24.721" width="248.827" height="252.178" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="37.5" result="blur-4"/>
+      <feFlood flood-color="#2f1ed1" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path-5" x="30.527" y="2.011" width="255.081" height="244.657" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="37.5" result="blur-5"/>
+      <feFlood flood-color="#2f1ed1" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path-6" x="11.317" y="0" width="251.358" height="251.582" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="37.5" result="blur-6"/>
+      <feFlood flood-color="#2f1ed1" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_854" data-name="Grupo 854" transform="translate(72.5 60.076)">
+    <g transform="matrix(1, 0, 0, 1, -72.5, -60.08)" filter="url(#Path)">
+      <path id="Path-7" data-name="Path" d="M0,25.837Q9.978,8.563,14.966,0L26.358,19.583a31.737,31.737,0,0,1-9.084,5.138A30.4,30.4,0,0,1,6.7,26.582,34.509,34.509,0,0,1,0,25.837Z" transform="translate(132.77 127.87)" fill="#8140a9"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -72.5, -60.08)" filter="url(#Path-2)">
+      <path id="Path-8" data-name="Path" d="M0,0H30.081L18.615,19.657A30.97,30.97,0,0,1,7.074,11.951,30.662,30.662,0,0,1,0,0Z" transform="translate(109.84 132.78)" fill="#8140a9"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -72.5, -60.08)" filter="url(#Path-3)">
+      <path id="Path-9" data-name="Path" d="M8.116,0q3.127,5.361,7.893,13.552l7.818,13.626H.6A29.081,29.081,0,0,1,0,20.923,30.558,30.558,0,0,1,8.116,0Z" transform="translate(108.5 102.55)" fill="#8140a9"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -72.5, -60.08)" filter="url(#Path-4)">
+      <path id="Path-10" data-name="Path" d="M23.231,0a29.081,29.081,0,0,1,.6,6.255,31.152,31.152,0,0,1-2.159,11.467,31.048,31.048,0,0,1-5.957,9.456L.819,1.564,0,0Z" transform="translate(146.62 117.22)" fill="#8140a9"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -72.5, -60.08)" filter="url(#Path-5)">
+      <path id="Path-11" data-name="Path" d="M30.081,19.657H0L11.467,0A30.97,30.97,0,0,1,23.008,7.707,30.662,30.662,0,0,1,30.081,19.657Z" transform="translate(139.03 94.51)" fill="#8140a9"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -72.5, -60.08)" filter="url(#Path-6)">
+      <path id="Path-12" data-name="Path" d="M11.69,26.284l-.3.3L0,7A31.737,31.737,0,0,1,9.084,1.861,30.4,30.4,0,0,1,19.657,0a32.946,32.946,0,0,1,6.7.745Z" transform="translate(119.82 92.5)" fill="#8140a9"/>
+    </g>
+  </g>
+</svg>
