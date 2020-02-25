@@ -99,6 +99,11 @@
     }
 
     .icon-lens {
+
+      a {
+        width: unset;
+      }
+
       img {
         transform: scale(1.4);
       }

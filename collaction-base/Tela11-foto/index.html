@@ -11,75 +11,38 @@
 <body>
 
 <div class="container">
-    <h1>Camera API</h1>
+    <div class="picture">
+        <img src="https://images.pexels.com/photos/3178818/pexels-photo-3178818.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+    </div>
+    
+    <div class="picture-action">
+        <div class="action-top">
+            <img src="../assets/Icons/camera-voltar.svg" alt="">
+        </div>
 
-    <section class="main-content">
-        <p>A demo of the Camera API, currently implemented in Firefox and Google Chrome on Android. Choose to take a picture with your device's camera and a preview will be shown through createObjectURL or a FileReader object (choosing local files supported too).</p>
-
-        <p>
-            <input type="file" id="take-picture" accept="image/*">
-        </p>
-
-        <h2>Preview:</h2>
-        <p>
-            <img src="about:blank" alt="" id="show-picture">
-        </p>
-
-        <p id="error"></p>
-
-    </section>
-
-    <p class="footer">All the code is available in the <a href="https://github.com/robnyman/robnyman.github.com/tree/master/camera-api">Camera API repository on GitHub</a>.</p>
+        <div class="action-bottom">
+            <div class="camera-action camera-trocar">
+                <img src="../assets/Icons/camera-trocar.svg" alt="">
+            </div>
+            <div class="camera-action camera-option">
+                <img src="../assets/Icons/camera-options.svg" alt="">
+            </div>
+            <div class="camera-action camera-flash">
+                <img src="../assets/Icons/camera-falsh.svg" alt="">
+            </div>
+            <div class="camera-action camera-temp">
+                <img src="../assets/Icons/camera-tempera.svg" alt="">
+            </div>
+            <div class="camera-action camera-botao">
+                <a href="../Tela12-Foto/index.html">
+                <img src="../assets/Icons/camera-button.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
 
 
 
-<script>
-    (function () {
-        var takePicture = document.querySelector("#take-picture"),
-            showPicture = document.querySelector("#show-picture");
-
-        if (takePicture && showPicture) {
-            // Set events
-            takePicture.onchange = function (event) {
-                // Get a reference to the taken picture or chosen file
-                var files = event.target.files,
-                    file;
-                if (files && files.length > 0) {
-                    file = files[0];
-                    try {
-                        // Get window.URL object
-                        var URL = window.URL || window.webkitURL;
-
-                        // Create ObjectURL
-                        var imgURL = URL.createObjectURL(file);
-
-                        // Set img src to ObjectURL
-                        showPicture.src = imgURL;
-
-                        // Revoke ObjectURL
-                        URL.revokeObjectURL(imgURL);
-                    }
-                    catch (e) {
-                        try {
-                            // Fallback if createObjectURL is not supported
-                            var fileReader = new FileReader();
-                            fileReader.onload = function (event) {
-                                showPicture.src = event.target.result;
-                            };
-                            fileReader.readAsDataURL(file);
-                        }
-                        catch (e) {
-                            //
-                            var error = document.querySelector("#error");
-                            if (error) {
-                                error.innerHTML = "Neither createObjectURL or FileReader are supported";
-                            }
-                        }
-                    }
-                }
-            };
-        }
-    })();
 </body>
 </html>

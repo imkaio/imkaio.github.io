@@ -1,286 +1,77 @@
 .container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow-y: scroll;
   overflow-scrolling: touch;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
-  .container .FeedHeader {
+  @supports (-webkit-appearance: none) {
+    .os-android .container {
+      min-height: calc(100vh - 56px); } }
+  .container .picture {
     width: 100%;
-    height: 70px;
-    border-bottom: 1px solid #eeeeee;
-    position: fixed;
-    top: 0;
-    display: flex;
+    height: inherit;
+    position: relative; }
+    .container .picture img {
+      max-width: 100%;
+      height: 100vh;
+      object-fit: cover; }
+  .container .picture-action {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
     justify-content: center;
-    align-items: center;
-    background: #fff;
-    z-index: 5;
-    transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 520ms !important; }
-    .container .FeedHeader .menu {
-      flex: 1;
+    display: flex;
+    align-items: center; }
+    .container .picture-action a {
+      width: unset; }
+    .container .picture-action .action-top {
       width: 70px;
       height: 70px;
-      position: fixed;
+      position: absolute;
+      top: 0;
       left: 0;
       display: flex;
-      justify-content: center;
-      align-items: center; }
-      .container .FeedHeader .menu:after {
-        content: ''; }
-      .container .FeedHeader .menu .bars {
-        display: flex;
-        flex-direction: column; }
-        .container .FeedHeader .menu .bars img {
-          max-width: 20px;
-          height: auto;
-          width: 100%; }
-    .container .FeedHeader .menu-right {
-      flex: 1;
-      width: 70px;
+      align-items: center;
+      justify-content: center; }
+      .container .picture-action .action-top img {
+        max-width: 50px;
+        height: auto; }
+    .container .picture-action .action-bottom {
+      width: 100%;
       height: 70px;
-      position: fixed;
-      right: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
       display: flex;
-      justify-content: center;
-      align-items: center; }
-      .container .FeedHeader .menu-right:after {
-        content: ''; }
-      .container .FeedHeader .menu-right .bars {
-        display: flex;
-        flex-direction: column; }
-        .container .FeedHeader .menu-right .bars img {
-          max-width: 20px;
-          height: auto;
-          width: 100%; }
-    .container .FeedHeader .logo {
-      flex: 2;
-      display: flex; }
-      .container .FeedHeader .logo img {
-        max-width: 100px;
-        height: auto;
-        padding: 0;
-        margin: 10px 0px 0px 0px; }
-    .container .FeedHeader .profilename {
-      font-size: 16px;
-      color: #232323;
-      font-family: 'nunitoregular'; }
-  .container .ProfileHeader {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    max-width: 100%;
-    margin-top: 90px;
-    transition: ease-in-out 380ms; }
-    .container .ProfileHeader .UserDetails {
-      width: 100%;
-      display: flex;
-      align-items: center; }
-      .container .ProfileHeader .UserDetails .UserPhoto {
-        width: 25%;
+      align-items: center;
+      justify-content: space-around; }
+      .container .picture-action .action-bottom .camera-action {
         flex: 1;
-        display: flex; }
-        .container .ProfileHeader .UserDetails .UserPhoto .div {
-          width: 80px;
-          height: 80px;
-          border-radius: 50%;
-          background: #7c37a6;
-          overflow: hidden; }
-          .container .ProfileHeader .UserDetails .UserPhoto .div img {
-            max-width: 100%;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            max-width: 100%;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; }
-      .container .ProfileHeader .UserDetails .UserData {
-        display: flex;
-        flex-direction: column;
-        margin-left: 15px;
-        width: 75%; }
-        .container .ProfileHeader .UserDetails .UserData .DataBlock {
-          display: flex;
-          width: 100%;
-          justify-content: space-between; }
-          .container .ProfileHeader .UserDetails .UserData .DataBlock .number {
-            width: 60px;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center; }
-            .container .ProfileHeader .UserDetails .UserData .DataBlock .number p {
-              font-size: 22px;
-              letter-spacing: -2px;
-              font-family: 'nunitobold'; }
-            .container .ProfileHeader .UserDetails .UserData .DataBlock .number span {
-              opacity: .5;
-              font-size: 12px;
-              margin-top: 0px;
-              font-family: 'nunitoregular'; }
-        .container .ProfileHeader .UserDetails .UserData .buttonProfile {
-          width: 100%;
-          display: flex;
-          margin-top: 8px;
-          justify-content: space-between; }
-          .container .ProfileHeader .UserDetails .UserData .buttonProfile a {
-            width: 75%; }
-            .container .ProfileHeader .UserDetails .UserData .buttonProfile a .btn-direct {
-              width: 100%;
-              height: 40px;
-              border-radius: 5px;
-              font-family: 'nunitosemibold';
-              border: 1px solid #7c37a6;
-              background: transparent;
-              text-align: center;
-              font-size: 14px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              color: #7c37a6;
-              margin-left: 10px; }
-          .container .ProfileHeader .UserDetails .UserData .buttonProfile .add {
-            display: flex;
-            width: 40px;
-            height: 40px;
-            background: #7C37A6;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: none;
-            color: #FFF; }
-            .container .ProfileHeader .UserDetails .UserData .buttonProfile .add img {
-              width: 20px;
-              height: auto; }
-    .container .ProfileHeader .UserBio {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      margin-top: 20px;
-      overflow: hidden; }
-      .container .ProfileHeader .UserBio .NameUser {
-        display: flex;
-        width: 100%;
-        flex-direction: column; }
-        .container .ProfileHeader .UserBio .NameUser h1 {
-          font-size: 22px;
-          font-family: 'Montserrat Bold'; }
-        .container .ProfileHeader .UserBio .NameUser span {
-          margin-top: 0px;
-          opacity: .5;
-          font-family: 'nunitoregular'; }
-      .container .ProfileHeader .UserBio .biograph {
-        width: 100%;
-        margin-top: 10px; }
-        .container .ProfileHeader .UserBio .biograph p {
-          font-size: 14px;
-          font-family: 'nunitoregular'; }
-      .container .ProfileHeader .UserBio .UserStories {
-        width: 100%;
-        display: flex;
-        margin-top: 15px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        border-top: 1px solid #eeeeee;
-        border-bottom: 1px solid #eeeeee;
-        overflow-y: auto; }
-        .container .ProfileHeader .UserBio .UserStories .storieblock {
-          width: 50px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin-right: 15px; }
-          .container .ProfileHeader .UserBio .UserStories .storieblock .storie {
-            width: 50px;
-            height: 50px;
-            background: #7c37a6;
-            border-radius: 50%;
-            overflow: hidden; }
-            .container .ProfileHeader .UserBio .UserStories .storieblock .storie img {
-              max-width: 100%;
-              width: 100%;
-              height: 100%;
-              object-fit: cover; }
-          .container .ProfileHeader .UserBio .UserStories .storieblock p {
-            text-align: center;
-            margin-top: 5px;
-            font-size: 12px;
-            font-family: 'nunitoregular'; }
-  .container .FeedProfile {
-    width: 100%;
-    display: flex;
-    flex-direction: column; }
-    .container .FeedProfile .pagefeed {
-      width: 100%;
-      display: flex; }
-      .container .FeedProfile .pagefeed div {
-        flex: 1;
-        height: 40px;
-        margin: 2px;
+        min-width: 40px;
         display: flex;
         justify-content: center;
         align-items: center; }
-        .container .FeedProfile .pagefeed div .icon {
-          max-width: 20px;
-          height: 20px; }
-          .container .FeedProfile .pagefeed div .icon img {
-            max-width: 100%;
-            height: 100%; }
-    .container .FeedProfile .galleryfeed {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap; }
-      .container .FeedProfile .galleryfeed .block-image {
-        display: flex;
-        background: #ddd;
-        margin: 1px;
-        overflow: hidden;
-        cursor: pointer;
-        flex: 1 32%;
-        height: 150px;
-        width: unset;
-        min-width: unset;
-        max-width: unset;
-        position: relative;
-        -webkit-overflow-scrolling: touch; }
-        .container .FeedProfile .galleryfeed .block-image:last-child {
-          max-width: 136px; }
-        .container .FeedProfile .galleryfeed .block-image:hover img {
-          transform: scale(1.2); }
-        .container .FeedProfile .galleryfeed .block-image:nth-child(1) {
-          flex: 1;
-          min-width: 45%;
-          height: 200px; }
-        .container .FeedProfile .galleryfeed .block-image:nth-child(2) {
-          flex: 1;
-          min-width: 45%;
-          height: 200px; }
-        .container .FeedProfile .galleryfeed .block-image .type-of-content {
-          width: 40px !important;
-          max-width: 40px !important;
-          height: 40px !important;
-          position: absolute;
-          top: 5px;
-          right: 5px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          z-index: 2; }
-          .container .FeedProfile .galleryfeed .block-image .type-of-content img {
-            width: 15px;
-            height: auto; }
-        .container .FeedProfile .galleryfeed .block-image .overlay-profile {
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          background: linear-gradient(40deg, rgba(255, 255, 255, 0) 0%, rgba(250, 250, 250, 0.02) 65.18%, #000 102%); }
-        .container .FeedProfile .galleryfeed .block-image img {
-          max-width: 100%;
-          height: auto;
-          object-fit: cover; }
+      .container .picture-action .action-bottom .camera-trocar img {
+        max-width: 20px;
+        height: 20px; }
+      .container .picture-action .action-bottom .camera-option img {
+        max-width: 20px;
+        height: 20px; }
+      .container .picture-action .action-bottom .camera-temp img {
+        max-width: 20px;
+        height: 20px; }
+      .container .picture-action .action-bottom .camera-flash img {
+        max-width: 20px;
+        height: 20px; }
+      .container .picture-action .action-bottom .camera-botao {
+        width: 70px;
+        height: 70px;
+        background: #fce545; }
+        .container .picture-action .action-bottom .camera-botao img {
+          max-width: 50px;
+          height: 50px; }
 
 /*# sourceMappingURL=style.css.map */

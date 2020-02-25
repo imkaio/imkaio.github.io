@@ -69,6 +69,8 @@
       .container .nav-bar-footer .icon img {
         max-width: 20px;
         height: auto; }
+    .container .nav-bar-footer .icon-lens a {
+      width: unset; }
     .container .nav-bar-footer .icon-lens img {
       transform: scale(1.4); }
   .container .FeedHeader {
