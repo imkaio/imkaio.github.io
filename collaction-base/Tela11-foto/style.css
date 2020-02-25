@@ -39,21 +39,69 @@
       .container .picture-action .action-top img {
         max-width: 50px;
         height: auto; }
-    .container .picture-action .action-bottom {
+    .container .picture-action .take-picture {
       width: 100%;
+      position: absolute;
+      bottom: 25px;
+      height: 100px;
+      display: flex;
+      align-items: center !important;
+      justify-content: center !important; }
+      .container .picture-action .take-picture .upload-foto {
+        width: fit-content;
+        position: absolute;
+        left: 25px; }
+        .container .picture-action .take-picture .upload-foto .block-upload {
+          width: 20px;
+          height: 20px;
+          border: 2px solid #FFFFFF;
+          border-radius: 3px; }
+          .container .picture-action .take-picture .upload-foto .block-upload img {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            object-fit: cover; }
+      .container .picture-action .take-picture .virar-camera {
+        width: fit-content;
+        position: absolute;
+        right: 0px; }
+        .container .picture-action .take-picture .virar-camera .camera-action {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        .container .picture-action .take-picture .virar-camera .camera-trocar img {
+          max-width: 20px;
+          height: 20px; }
+      .container .picture-action .take-picture .camera-action {
+        min-width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .container .picture-action .take-picture .camera-botao {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .container .picture-action .take-picture .camera-botao img {
+          max-width: 80px;
+          height: 80px; }
+    .container .picture-action .action-bottom {
       height: 80px;
       position: absolute;
-      bottom: 0;
-      left: 0;
+      right: 10px;
       display: flex;
       align-items: center;
+      flex-direction: column;
       justify-content: space-around; }
       .container .picture-action .action-bottom .camera-action {
         flex: 1;
         min-width: 40px;
         display: flex;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        margin-bottom: 50px; }
       .container .picture-action .action-bottom .camera-trocar img {
         max-width: 20px;
         height: 20px; }
@@ -66,15 +114,5 @@
       .container .picture-action .action-bottom .camera-flash img {
         max-width: 20px;
         height: 20px; }
-      .container .picture-action .action-bottom .camera-botao {
-        width: 80px;
-        height: 80px;
-        background: #fce545;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        .container .picture-action .action-bottom .camera-botao img {
-          max-width: 50px;
-          height: 50px; }
 
 /*# sourceMappingURL=style.css.map */
