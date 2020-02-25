@@ -36,9 +36,13 @@
         </div>
 
         <div class="edicao-tools">
+            <div class="bright-controls">
+                <p>BRILHO</p>
+                <input type="range" min="6" max="70" value="22" id="font-1-size" />
+            </div>
             <div class="edicao" id="edicao">
                 <div class="edit">
-                    <div class="icon-edit">
+                    <div class="icon-edit" onclick="openBriRanger()">
                         <img src="../assets/Icons/editar-brilho.png" alt="">
                     </div>
                 </div>
@@ -126,6 +130,8 @@
     </div>
 </div>
 
+
+
 <script>
     function edicaoFunction() {
         const x = document.getElementById("filtros");
@@ -163,8 +169,6 @@
             y.style.display = "none";
             textFiltro.style.opacity = "1";
             textEditar.style.opacity = "0.5";
-
-
         }
     }
 </script>
@@ -184,6 +188,9 @@
     }
     function myFilterLofi() {
         document.getElementById("apply-filter").style.filter = "contrast(150%) saturate(110%)";
+    }
+    function openBriRanger() {
+        document.querySelector(".bright-controls").style.display = "flex";
     }
 </script>
 

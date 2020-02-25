@@ -81,7 +81,7 @@
         object-fit: cover; }
     .container .edicao-foto .edicao-tools {
       width: 100%;
-      min-height: 50px;
+      min-height: 150px;
       height: fit-content;
       padding: 10px 0px 0px 0px;
       position: absolute;
@@ -93,6 +93,36 @@
       bottom: 0;
       background: linear-gradient(rgba(38, 38, 40, 0) 0%, #262628 100%);
       transition: ease-in-out 880ms; }
+      .container .edicao-foto .edicao-tools .bright-controls {
+        width: 80%;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: none;
+        transition: ease-in-out 380ms; }
+        .container .edicao-foto .edicao-tools .bright-controls p {
+          font-size: 12px;
+          font-family: 'Montserrat SemiBold';
+          letter-spacing: 2px;
+          color: #FFF; }
+        .container .edicao-foto .edicao-tools .bright-controls #font-1-size {
+          -webkit-appearance: none !important;
+          background: #cecece;
+          height: 2px;
+          width: inherit;
+          -webkit-transform: translate3d(0px, 0px, 0px);
+          margin-top: 10px;
+          cursor: pointer; }
+        .container .edicao-foto .edicao-tools .bright-controls #font-1-size::-webkit-slider-thumb {
+          -webkit-appearance: none !important;
+          background: #fce545;
+          height: 10px;
+          width: 10px;
+          cursor: pointer;
+          -moz-border-radius: 10px;
+          border-radius: 10px; }
       .container .edicao-foto .edicao-tools .edicao {
         display: none;
         width: 100%;
