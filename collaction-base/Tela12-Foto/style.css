@@ -91,14 +91,16 @@
       justify-content: center;
       overflow: hidden;
       bottom: 0;
-      background: linear-gradient(rgba(38, 38, 40, 0) 0%, #262628 100%); }
+      background: linear-gradient(rgba(38, 38, 40, 0) 0%, #262628 100%);
+      transition: ease-in-out 880ms; }
       .container .edicao-foto .edicao-tools .edicao {
         display: none;
         width: 100%;
         margin-bottom: 25px;
         align-items: center;
         position: relative;
-        margin-left: 15px; }
+        margin-left: 15px;
+        animation: FadeIn ease-in-out 680ms forwards; }
         .container .edicao-foto .edicao-tools .edicao::-webkit-scrollbar {
           display: none; }
         .container .edicao-foto .edicao-tools .edicao .edit {
@@ -134,7 +136,8 @@
         align-items: center;
         overflow-x: auto;
         position: relative;
-        margin-left: 15px; }
+        margin-left: 15px;
+        animation: FadeIn ease-in-out 680ms forwards; }
         .container .edicao-foto .edicao-tools .filtros::-webkit-scrollbar {
           display: none; }
         .container .edicao-foto .edicao-tools .filtros .filtro {

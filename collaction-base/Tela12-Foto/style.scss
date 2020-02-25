@@ -117,6 +117,8 @@
       overflow: hidden;
       bottom: 0;
       background: linear-gradient(rgba(38, 38, 40, 0) 0%, #262628 100%);
+      transition:  ease-in-out 880ms ;
+
 
 
       .edicao {
@@ -126,6 +128,7 @@
         align-items: center;
         position: relative;
         margin-left: 15px;
+        animation: FadeIn ease-in-out 680ms forwards;
 
         &::-webkit-scrollbar {
           display: none;
@@ -178,6 +181,9 @@
         overflow-x: auto;
         position: relative;
         margin-left: 15px;
+        animation: FadeIn ease-in-out 680ms forwards;
+
+
 
         &::-webkit-scrollbar {
           display: none;
