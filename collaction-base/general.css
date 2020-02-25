@@ -46,6 +46,28 @@ input, button, textarea {
 }
 
 
+@keyframes teste {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    60% {
+        transform: rotate(-5deg);
+    }
+    70% {
+        transform: rotate(5deg);
+    }
+    80% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
 @keyframes ballong {
     0% {
         transform: translateY(28px);
