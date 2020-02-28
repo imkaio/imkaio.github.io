@@ -108,8 +108,10 @@
       height: calc(100vh - 50px);
       background: rgba(35, 35, 35, 0.8);
       transition:  ease-in-out 880ms ;
-      position: absolute;
+      
+      position: fixed;
       bottom: 0;
+      overflow-y: scroll;
       justify-content: center;
       align-items: center;
       display: none;
