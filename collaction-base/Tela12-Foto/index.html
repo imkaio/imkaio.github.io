@@ -24,15 +24,71 @@
 
 
         <div class="menu-right">
-            <div class="bars">
-                <img src="../assets/Icons/camera-checked.svg" alt="">
-            </div>
+                <div class="bars" onclick="postConfig()">
+                    <img src="../assets/Icons/camera-checked.svg" alt="">
+                </div>
         </div>
     </div>
 
     <div class="edicao-foto">
         <div class="preview-foto">
             <img id="apply-filter" src="https://images.pexels.com/photos/3178818/pexels-photo-3178818.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+        </div>
+
+        <div class="edit-post">
+            <div class="hold-config">
+                <div class="block-post">
+                    <input type="text" placeholder="Escreva uma legenda">
+                </div>
+                <div class="block-post">
+                    <p>Marcar pessoas</p>
+                    <span> > </span>
+                </div>
+                <div class="block-post">
+                    <p>Adicionar Localização</p>
+                    <span> > </span>
+                </div>
+                <div class="block-post-share">
+                    <p>Publicar também em:</p>
+                    <div class="block_share">
+                        <div class="block-share">
+                            <p>Instagram</p>
+                            <span>
+                                <input class="container_toggle" type="checkbox" id="switch" name="mode">
+                                <label for="switch">Toggle</label>
+                            </span>
+                        </div>
+                        <div class="block-share">
+                            <p>TikTok</p>
+
+                            <span>
+                                <input class="container_toggle" type="checkbox" id="switch2" name="mode">
+                                <label for="switch2">Toggle</label>
+                            </span>
+                        </div>
+                        <div class="block-share">
+                            <p>Facebook</p>
+
+                            <span>
+                                <input class="container_toggle" type="checkbox" id="switch3" name="mode">
+                                <label for="switch3">Toggle</label>
+                            </span>
+                        </div>
+                        <div class="block-share">
+                            <p>TWitter</p>
+
+                            <span>
+                                <input class="container_toggle" type="checkbox" id="switch4" name="mode">
+                                <label for="switch4">Toggle</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-publish">
+                    <button>Compartilhar</button>
+                </div>
+            </div>
         </div>
 
         <div class="edicao-tools">
@@ -191,6 +247,16 @@
     }
     function openBriRanger() {
         document.querySelector(".bright-controls").style.display = "flex";
+    }
+</script>
+
+<script>
+
+    function postConfig() {
+        document.querySelector(".edicao-tools").style.display = "none";
+        document.querySelector(".profilename").innerHTML = "Nova publicação";
+        document.querySelector(".menu-right").style.display = "none";
+        document.querySelector(".edit-post").style.display = "flex";
     }
 </script>
 

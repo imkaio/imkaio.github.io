@@ -103,6 +103,173 @@
       }
     }
 
+    .edit-post {
+      width: 100%;
+      height: calc(100vh - 50px);
+      background: rgba(35, 35, 35, 0.8);
+      transition:  ease-in-out 880ms ;
+      position: absolute;
+      bottom: 0;
+      justify-content: center;
+      align-items: center;
+      display: none;
+
+      .hold-config {
+        width: 85%;
+        position: absolute;
+        bottom: 0px;
+        display: flex;
+        flex-direction: column;
+
+        .block-post {
+          width: 100%;
+          height: 65px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid #eee;
+
+          &:first-child {
+            border-top: none;
+          }
+
+
+
+          input {
+            width: 100%;
+            height: inherit;
+            font-size: 16px;
+            background: transparent;
+            border: none;
+            color: #FFFFFF;
+          }
+
+          p {
+            width: 100%;
+            font-size: 16px;
+            color: #FFF;
+            font-family: 'Nunito';
+          }
+        }
+        .block-post-share {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+
+          p {
+            margin-top: 32px;
+            margin-bottom: 30px;
+            width: 100%;
+            font-family: 'nunitosemibold';
+            color: #FFFFFF;
+            font-size: 16px;
+          }
+
+          .block_share {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+
+            .block-share {
+              width: 100%;
+              height: 55px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              border-bottom: 1px solid rgba(238, 238, 238, 0.25);
+
+              p {
+                margin: 0;
+                font-family: 'nunitosemibold'!important;
+                color: #FFF;
+              }
+
+              span {
+                margin: 0;
+                padding: 0;
+                height: inherit;
+                display: flex;
+                align-items: center;
+
+                input[type=checkbox] {
+                  height: 0;
+                  width: 0;
+                  visibility: hidden;
+                }
+
+                label {
+                  cursor: pointer;
+                  text-indent: -9999px;
+                  width: 55px;
+                  height: 30px;
+                  background: var(--lightBtn);
+                  margin: 0 auto;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  -webkit-border-radius: 100px;
+                  -moz-border-radius: 100px;
+                  border-radius: 100px;
+                  position: relative;
+                  background: rgba(0,0,0,.5);
+                }
+
+                label:after {
+                  content: '';
+                  background: #fff;
+                  width: 20px;
+                  height: 20px;
+                  -webkit-border-radius: 50%;
+                  -moz-border-radius: 50%;
+                  border-radius: 50%;
+                  position: absolute;
+                  top: 5px;
+                  left: 4px;
+                  transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+                }
+
+                input:checked + label {
+                  background: #0BC383;
+                }
+
+                input:checked + label:after {
+                  left: calc(100% - 5px);
+                  -webkit-transform: translateX(-100%);
+                  -moz-transform: translateX(-100%);
+                  -ms-transform: translateX(-100%);
+                  -o-transform: translateX(-100%);
+                  transform: translateX(-100%);
+                }
+
+              }
+            }
+          }
+        }
+
+        .btn-publish {
+          width: 100%;
+          margin-top: 35px;
+          margin-bottom: 35px;
+          display: flex;
+          justify-content: flex-end;
+
+          button {
+            color: #7c37a6;
+            font-family: 'nunitoregular';
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 50px;
+            background: #fff;
+          }
+        }
+      }
+    }
+
 
 
     .edicao-tools {
@@ -247,8 +414,8 @@
           }
 
           .active-filtro {
-            width: 48px!important;
-            height: 48px!important;
+            width: 47px!important;
+            height: 47px!important;
             position: relative;
             display: flex;
             justify-content: center;
