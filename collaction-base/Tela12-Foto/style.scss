@@ -113,6 +113,7 @@
       justify-content: center;
       align-items: center;
       display: none;
+      animation: FadeIn ease-in-out 680ms forwards;
 
       .hold-config {
         width: 85%;

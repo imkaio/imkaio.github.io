@@ -88,7 +88,8 @@
       bottom: 0;
       justify-content: center;
       align-items: center;
-      display: none; }
+      display: none;
+      animation: FadeIn ease-in-out 680ms forwards; }
       .container .edicao-foto .edit-post .hold-config {
         width: 85%;
         position: absolute;
