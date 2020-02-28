@@ -118,9 +118,11 @@
       .hold-config {
         width: 85%;
         position: absolute;
-        bottom: 0px;
+        top: 40px;
         display: flex;
         flex-direction: column;
+        height: calc(100vh - 50px);
+    overflow-y: scroll;
 
         .block-post {
           width: 100%;
