@@ -1,0 +1,701 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Open Sans';
+  overflow-x: hidden; }
+
+.virus__wrapper {
+  max-width: 1240px;
+  width: 100%;
+  padding: 0px 0px;
+  position: relative;
+  margin-top: 80px; }
+
+.virus__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .virus__container .virus__firstBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .virus__container .virus__firstBlock h1 {
+      width: 60%;
+      font-family: 'Open Sans';
+      font-weight: bold;
+      font-size: calc(24px + (64 - 24) * ((100vw - 300px) / (1600 - 300)));
+      color: #e7b200; }
+    .virus__container .virus__firstBlock .virus__historia {
+      margin-top: 50px;
+      width: 100%;
+      padding: 50px 0px;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #e7b200; }
+      @media (max-width: 600px) {
+        .virus__container .virus__firstBlock .virus__historia {
+          height: 300px; } }
+      .virus__container .virus__firstBlock .virus__historia .virus__wrapper--historia {
+        max-width: 1240px;
+        width: 100%;
+        padding: 0px 15px;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        height: inherit; }
+        @media (max-width: 600px) {
+          .virus__container .virus__firstBlock .virus__historia .virus__wrapper--historia {
+            flex-direction: column; } }
+        .virus__container .virus__firstBlock .virus__historia .virus__wrapper--historia .historia__texto {
+          flex: 1; }
+          @media (max-width: 600px) {
+            .virus__container .virus__firstBlock .virus__historia .virus__wrapper--historia .historia__texto {
+              width: 100%;
+              flex: unset; } }
+          .virus__container .virus__firstBlock .virus__historia .virus__wrapper--historia .historia__texto h2 {
+            font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
+            color: #232323;
+            font-weight: 800;
+            margin-bottom: 10px;
+            width: 80%; }
+            @media (max-width: 600px) {
+              .virus__container .virus__firstBlock .virus__historia .virus__wrapper--historia .historia__texto h2 {
+                width: 100%; } }
+          .virus__container .virus__firstBlock .virus__historia .virus__wrapper--historia .historia__texto p {
+            font-size: calc(14px + (19 - 14) * ((100vw - 300px) / (1600 - 300)));
+            color: #232323;
+            font-weight: 400;
+            width: 80%; }
+            @media (max-width: 600px) {
+              .virus__container .virus__firstBlock .virus__historia .virus__wrapper--historia .historia__texto p {
+                width: 100%;
+                text-align: justify; } }
+        .virus__container .virus__firstBlock .virus__historia .virus__wrapper--historia .historia__imagem {
+          flex: 1;
+          position: relative;
+          height: inherit; }
+          @media (max-width: 600px) {
+            .virus__container .virus__firstBlock .virus__historia .virus__wrapper--historia .historia__imagem {
+              width: 100%;
+              flex: unset;
+              display: flex;
+              justify-content: center; } }
+          .virus__container .virus__firstBlock .virus__historia .virus__wrapper--historia .historia__imagem img {
+            max-width: 100%;
+            height: auto;
+            position: absolute;
+            bottom: 0; }
+            @media (max-width: 600px) {
+              .virus__container .virus__firstBlock .virus__historia .virus__wrapper--historia .historia__imagem img {
+                position: absolute;
+                bottom: -120px;
+                max-width: 70%; } }
+  .virus__container .virus__secondBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .virus__container .virus__secondBlock .virus__crescimento {
+      margin-top: 0px;
+      width: 100%;
+      padding: 100px 0px 0px 0px;
+      height: 644px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #FFF; }
+      @media (max-width: 600px) {
+        .virus__container .virus__secondBlock .virus__crescimento {
+          height: fit-content;
+          padding: 100px 0px 0px; } }
+      .virus__container .virus__secondBlock .virus__crescimento .virus__wrapper--crescimento {
+        max-width: 1240px;
+        width: 100%;
+        padding: 0px 15px;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        height: inherit;
+        overflow: hidden; }
+        @media (max-width: 600px) {
+          .virus__container .virus__secondBlock .virus__crescimento .virus__wrapper--crescimento {
+            flex-direction: column; } }
+        .virus__container .virus__secondBlock .virus__crescimento .virus__wrapper--crescimento .crescimento__texto {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          text-align: right;
+          order: 2; }
+          @media (max-width: 600px) {
+            .virus__container .virus__secondBlock .virus__crescimento .virus__wrapper--crescimento .crescimento__texto {
+              flex: unset;
+              width: 100%;
+              order: 1; } }
+          .virus__container .virus__secondBlock .virus__crescimento .virus__wrapper--crescimento .crescimento__texto h3 {
+            font-size: calc(22px + (52 - 22) * ((100vw - 300px) / (1600 - 300)));
+            color: #232323;
+            font-weight: 800;
+            margin-bottom: 10px;
+            width: 80%; }
+            @media (max-width: 600px) {
+              .virus__container .virus__secondBlock .virus__crescimento .virus__wrapper--crescimento .crescimento__texto h3 {
+                width: 50%; } }
+          .virus__container .virus__secondBlock .virus__crescimento .virus__wrapper--crescimento .crescimento__texto p {
+            font-size: calc(14px + (19 - 14) * ((100vw - 300px) / (1600 - 300)));
+            color: #232323;
+            font-weight: 400;
+            width: 80%; }
+            @media (max-width: 600px) {
+              .virus__container .virus__secondBlock .virus__crescimento .virus__wrapper--crescimento .crescimento__texto p {
+                margin-bottom: 25px;
+                width: 100%;
+                text-align: justify; } }
+          .virus__container .virus__secondBlock .virus__crescimento .virus__wrapper--crescimento .crescimento__texto .teste {
+            width: 100%;
+            position: relative;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: left;
+            margin: 15px 0px; }
+            @media (max-width: 600px) {
+              .virus__container .virus__secondBlock .virus__crescimento .virus__wrapper--crescimento .crescimento__texto .teste {
+                display: none; } }
+            .virus__container .virus__secondBlock .virus__crescimento .virus__wrapper--crescimento .crescimento__texto .teste span.fill {
+              width: 8400px;
+              position: relative;
+              left: -50%;
+              transform-origin: left;
+              height: 30px;
+              background: #e7b200;
+              z-index: 1;
+              animation: fillLeft cubic-bezier(0.36, 0.07, 0.19, 0.97) 1000ms forwards; }
+@keyframes fillLeft {
+  0% {
+    width: 0;
+    transform: scale(0); }
+  100% {
+    width: 100%;
+    transform: scale(2); } }
+        .virus__container .virus__secondBlock .virus__crescimento .virus__wrapper--crescimento .crescimento__imagem {
+          flex: 1;
+          position: relative;
+          height: inherit;
+          z-index: 2;
+          order: 1; }
+          @media (max-width: 600px) {
+            .virus__container .virus__secondBlock .virus__crescimento .virus__wrapper--crescimento .crescimento__imagem {
+              order: 2;
+              width: 100%;
+              flex: unset;
+              height: 300px;
+              display: flex;
+              justify-content: center; } }
+          .virus__container .virus__secondBlock .virus__crescimento .virus__wrapper--crescimento .crescimento__imagem img {
+            max-width: 100%;
+            height: inherit;
+            position: absolute;
+            bottom: 0; }
+            @media (max-width: 600px) {
+              .virus__container .virus__secondBlock .virus__crescimento .virus__wrapper--crescimento .crescimento__imagem img {
+                height: 100%; } }
+  .virus__container .virus__threeBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; }
+    .virus__container .virus__threeBlock .virus__carrousel {
+      margin: 0px auto;
+      width: 100%;
+      padding: 100px 0px 150px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: #e7b200; }
+      .virus__container .virus__threeBlock .virus__carrousel .carrousel {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: .2; }
+      .virus__container .virus__threeBlock .virus__carrousel .absoluteText {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-width: 1240px;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden; }
+        .virus__container .virus__threeBlock .virus__carrousel .absoluteText p {
+          font-size: calc(14px + (52 - 14) * ((100vw - 300px) / (1600 - 300)));
+          font-weight: 600;
+          color: #FFF; }
+  .virus__container .virus__fourBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .virus__container .virus__fourBlock .virus__planos {
+      margin-top: 0px;
+      width: 100%;
+      padding: 50px 0px;
+      height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      @media (max-width: 600px) {
+        .virus__container .virus__fourBlock .virus__planos {
+          height: fit-content;
+          padding: 5px 0px; } }
+      .virus__container .virus__fourBlock .virus__planos .virus__wrapper--planos {
+        max-width: 1240px;
+        width: 100%;
+        padding: 0px 15px;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        height: inherit; }
+        @media (max-width: 600px) {
+          .virus__container .virus__fourBlock .virus__planos .virus__wrapper--planos {
+            flex-direction: column; } }
+        .virus__container .virus__fourBlock .virus__planos .virus__wrapper--planos .tiltle_multi {
+          width: 100%;
+          position: absolute;
+          left: 0;
+          top: -100px; }
+          @media (max-width: 600px) {
+            .virus__container .virus__fourBlock .virus__planos .virus__wrapper--planos .tiltle_multi {
+              top: -57px; } }
+          .virus__container .virus__fourBlock .virus__planos .virus__wrapper--planos .tiltle_multi h2 {
+            font-size: 50px;
+            color: #FFFF;
+            font-weight: 800;
+            margin-bottom: 10px;
+            width: 80%;
+            margin-left: 15px; }
+          .virus__container .virus__fourBlock .virus__planos .virus__wrapper--planos .tiltle_multi span {
+            font-size: 50px;
+            color: #232323;
+            font-weight: 800;
+            width: 80%;
+            display: flex;
+            margin-top: -25px;
+            margin-left: 15px; }
+            @media (max-width: 600px) {
+              .virus__container .virus__fourBlock .virus__planos .virus__wrapper--planos .tiltle_multi span {
+                width: 100%;
+                text-align: justify; } }
+        .virus__container .virus__fourBlock .virus__planos .virus__wrapper--planos .planos__texto {
+          flex: 1; }
+          @media (max-width: 600px) {
+            .virus__container .virus__fourBlock .virus__planos .virus__wrapper--planos .planos__texto {
+              width: 100%;
+              flex: unset;
+              margin-top: 80px; } }
+          .virus__container .virus__fourBlock .virus__planos .virus__wrapper--planos .planos__texto p {
+            font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+            color: #232323;
+            font-weight: 400;
+            width: 80%;
+            display: flex; }
+            @media (max-width: 600px) {
+              .virus__container .virus__fourBlock .virus__planos .virus__wrapper--planos .planos__texto p {
+                width: 100%;
+                text-align: justify; } }
+        .virus__container .virus__fourBlock .virus__planos .virus__wrapper--planos .planos__imagem {
+          flex: 1;
+          position: relative;
+          height: inherit;
+          display: flex;
+          justify-content: flex-end; }
+          @media (max-width: 600px) {
+            .virus__container .virus__fourBlock .virus__planos .virus__wrapper--planos .planos__imagem {
+              width: 100%;
+              flex: unset;
+              height: 300px;
+              margin-top: 35px;
+              justify-content: center; } }
+          .virus__container .virus__fourBlock .virus__planos .virus__wrapper--planos .planos__imagem img {
+            max-width: 100%;
+            height: auto;
+            position: absolute;
+            bottom: 0; }
+            @media (max-width: 600px) {
+              .virus__container .virus__fourBlock .virus__planos .virus__wrapper--planos .planos__imagem img {
+                height: 100%; } }
+  .virus__container .virus__fiveBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .virus__container .virus__fiveBlock .virus__frase {
+      margin-top: 100px;
+      width: 100%;
+      padding: 50px 0px;
+      height: 500px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden; }
+      @media (max-width: 600px) {
+        .virus__container .virus__fiveBlock .virus__frase {
+          height: 320px; } }
+      .virus__container .virus__fiveBlock .virus__frase .patterns {
+        width: 100%;
+        height: 450px;
+        position: absolute;
+        overflow: hidden; }
+        @media (max-width: 600px) {
+          .virus__container .virus__fiveBlock .virus__frase .patterns {
+            height: 185px;
+            transform: scale(2); } }
+        .virus__container .virus__fiveBlock .virus__frase .patterns img {
+          width: 100%;
+          max-width: 100%;
+          height: inherit;
+          position: absolute;
+          left: -46px;
+          transform: scaleX(1.1);
+          animation-name: pattern;
+          transform-origin: left;
+          animation-duration: 1200ms;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite; }
+@keyframes pattern {
+  from {
+    -webkit-transform: translateX(0); }
+  to {
+    -webkit-transform: translateX(46px); } }
+      .virus__container .virus__fiveBlock .virus__frase .virus__wrapper--frase {
+        max-width: 1240px;
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: inherit; }
+        .virus__container .virus__fiveBlock .virus__frase .virus__wrapper--frase .frase__texto {
+          width: 80%;
+          top: -80px;
+          margin: 0 auto;
+          background: #FFFFFF;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          text-align: center;
+          padding: 25px; }
+          .virus__container .virus__fiveBlock .virus__frase .virus__wrapper--frase .frase__texto span {
+            font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+            color: #232323;
+            font-weight: 400;
+            margin-bottom: 20px; }
+          .virus__container .virus__fiveBlock .virus__frase .virus__wrapper--frase .frase__texto p {
+            text-align: center;
+            font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
+            color: #e7b200;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px; }
+        .virus__container .virus__fiveBlock .virus__frase .virus__wrapper--frase .frase_imagem {
+          width: 100%;
+          height: 630px;
+          bottom: -280px;
+          margin: 0 auto;
+          background: #FFFFFF;
+          position: absolute; }
+          @media (max-width: 600px) {
+            .virus__container .virus__fiveBlock .virus__frase .virus__wrapper--frase .frase_imagem {
+              height: 200px;
+              bottom: 0px;
+              width: 90%; } }
+          .virus__container .virus__fiveBlock .virus__frase .virus__wrapper--frase .frase_imagem img {
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            object-fit: cover; }
+  .virus__container .virus__sixBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px; }
+    .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos {
+      max-width: 1240px;
+      width: 100%;
+      position: relative;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: inherit; }
+      .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .divisor {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; }
+        .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .divisor .mainBlock {
+          width: 100%;
+          height: 15px;
+          background: #e7b200;
+          position: absolute; }
+        .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .divisor .secondBlock {
+          width: 50%;
+          height: 40px;
+          background: #e7b200;
+          position: absolute; }
+      .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos h6 {
+        width: 100%;
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: calc(24px + (54 - 24) * ((100vw - 300px) / (1600 - 300)));
+        color: #232323;
+        text-align: center; }
+      .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecos-tabs {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-top: 80px; }
+        @media (max-width: 600px) {
+          .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecos-tabs {
+            width: 95%; } }
+        .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecos-tabs ul {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          position: relative; }
+          @media (max-width: 600px) {
+            .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecos-tabs ul {
+              justify-content: space-between; } }
+          .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecos-tabs ul li {
+            list-style: none;
+            font-family: 'Open Sans';
+            font-weight: bold;
+            font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
+            color: #232323;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 3; }
+            .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecos-tabs ul li:hover .bgXV {
+              display: flex; }
+            .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecos-tabs ul li:hover .bgPA {
+              display: flex; }
+            .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecos-tabs ul li:hover .bgJO {
+              display: flex; }
+            .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecos-tabs ul li .bgXV, .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecos-tabs ul li .bgPA, .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecos-tabs ul li .bgJO {
+              display: flex;
+              width: 100%;
+              padding: 10px 10px;
+              background: #e7b200;
+              height: 55px;
+              position: absolute;
+              bottom: -60px;
+              z-index: -1;
+              transform-origin: bottom;
+              animation: bgtab ease-in-out 380ms forwards; }
+@keyframes bgtab {
+  0% {
+    transform: scaleY(0); }
+  100% {
+    transform: scaleY(1); } }
+      .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock {
+        width: 80%;
+        position: relative; }
+        .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock #xv {
+          animation: changeAddress ease-in-out 320ms forwards; }
+@keyframes changeAddress {
+  0% {
+    transform: translateY(10px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+        .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock #pa, .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock #jo {
+          display: none;
+          animation: changeAddress ease-in-out 320ms forwards; }
+@keyframes changeAddress {
+  0% {
+    transform: translateY(10px);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+        .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco {
+          width: 100%;
+          height: 400px;
+          top: -50px;
+          display: flex;
+          position: relative; }
+          @media (max-width: 600px) {
+            .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco {
+              flex-direction: column;
+              height: inherit; } }
+          .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco .loja-foto {
+            flex: 1;
+            max-width: 400px;
+            width: 100%;
+            height: 400px; }
+            .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco .loja-foto img {
+              max-width: 100%;
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+          .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco .loja-info-block {
+            flex: 1;
+            width: 100%;
+            height: fit-content;
+            position: relative; }
+            .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco .loja-info-block .loja-info {
+              width: 95%;
+              margin-top: 100px;
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              align-items: center; }
+              @media (max-width: 600px) {
+                .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco .loja-info-block .loja-info {
+                  margin-top: 25px; } }
+              .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco .loja-info-block .loja-info .endereco_header {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start; }
+                @media (max-width: 600px) {
+                  .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco .loja-info-block .loja-info .endereco_header {
+                    order: 2; } }
+                .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco .loja-info-block .loja-info .endereco_header p {
+                  font-family: 'Open Sans';
+                  font-weight: bold;
+                  font-size: calc(18px + (18 - 18) * ((100vw - 300px) / (1600 - 300)));
+                  color: #232323; }
+                .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco .loja-info-block .loja-info .endereco_header button {
+                  padding: 5px 30px;
+                  border-radius: 5px;
+                  font-family: 'Open Sans';
+                  font-weight: 400;
+                  font-size: calc(14px + (14 - 14) * ((100vw - 300px) / (1600 - 300)));
+                  color: #FFFFFF;
+                  text-transform: uppercase;
+                  background: #232323;
+                  letter-spacing: 2px;
+                  margin-top: 15px; }
+              .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco .loja-info-block .loja-info .endereco_content {
+                width: 90%;
+                border-top: 2px solid #232323;
+                margin-top: 25px;
+                padding-top: 25px; }
+                @media (max-width: 600px) {
+                  .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco .loja-info-block .loja-info .endereco_content {
+                    order: 3; } }
+                .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco .loja-info-block .loja-info .endereco_content p {
+                  font-family: 'Open Sans';
+                  font-weight: bold;
+                  font-size: calc(18px + (18 - 18) * ((100vw - 300px) / (1600 - 300)));
+                  color: #232323; }
+                .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco .loja-info-block .loja-info .endereco_content ul li {
+                  list-style: none;
+                  font-family: 'Open Sans';
+                  font-weight: normal;
+                  font-size: calc(18px + (18 - 18) * ((100vw - 300px) / (1600 - 300)));
+                  color: #232323; }
+              .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco .loja-info-block .loja-info .nav_address-bt {
+                width: 90%;
+                margin-top: 25px;
+                display: flex;
+                justify-content: space-between; }
+                @media (max-width: 600px) {
+                  .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco .loja-info-block .loja-info .nav_address-bt {
+                    order: 1;
+                    margin-top: 0px;
+                    margin-bottom: 25px; } }
+                .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco .loja-info-block .loja-info .nav_address-bt .prev_ad {
+                  display: flex;
+                  height: 20px;
+                  display: flex;
+                  align-items: center;
+                  cursor: pointer;
+                  flex: 1;
+                  justify-content: flex-start; }
+                  .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco .loja-info-block .loja-info .nav_address-bt .prev_ad img {
+                    max-width: 100%;
+                    height: auto; }
+                .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco .loja-info-block .loja-info .nav_address-bt .next_ad {
+                  display: flex;
+                  height: 20px;
+                  display: flex;
+                  align-items: center;
+                  cursor: pointer;
+                  flex: 1;
+                  justify-content: flex-end; }
+                  .virus__container .virus__sixBlock .virus__wrapper--ondeEstamos .enderecoBlock .endereco .loja-info-block .loja-info .nav_address-bt .next_ad img {
+                    max-width: 100%;
+                    height: auto; }
+    .virus__container .virus__sixBlock .decorationBlock {
+      width: 100%;
+      height: 120px;
+      background: #e7b200;
+      display: flex;
+      margin-top: 20px; }
+  .virus__container footer {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #000; }
+    .virus__container footer .socials {
+      width: 20%;
+      justify-content: space-around;
+      display: flex; }
+      @media (max-width: 600px) {
+        .virus__container footer .socials {
+          width: 80%; } }
+      .virus__container footer .socials .social {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .virus__container footer .socials .social img {
+          max-width: 25px;
+          height: auto; }
+
+/* Mixin for Media Querie */
+/* Mixin for Font Size scable */
+
+/*# sourceMappingURL=style.css.map */
